@@ -40,8 +40,8 @@ We met in early August in Madison,WI , on the first day of work - our first "rea
 							</div>
 							<!-- Only visible on desktop devices -->
 							<div class="story-timeline__text d-none d-md-block" data-aos="zoom-in-right">
-								<h4><heart-icon/>The Wedding	</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+								<h4><heart-icon/>The Wedding</h4>
+								<p>We're so excited to invite you to where it all began - Madison, Wi - to join us in celebrating our union!</p>
 							</div>
 						</div>
 
@@ -50,14 +50,14 @@ We met in early August in Madison,WI , on the first day of work - our first "rea
 							<img src="https://scontent-msp1-1.xx.fbcdn.net/v/t1.0-9/26047398_10156141372424434_3246029581249229528_n.jpg?_nc_cat=109&_nc_ht=scontent-msp1-1.xx&oh=777c9f7b62795bbffa1d5131510f17ee&oe=5C8DABAC" alt="First time we met" data-aos="zoom-in-left" />
 							<!-- Only visible on desktop devices -->
 							<div class="story-timeline__text d-none d-md-block" data-aos="zoom-in-left">
-								<h4>Six happy years
+								<h4>Four Happy Years
 						<heart-icon/></h4>
 								<p>We've built our relationship on love for family, friends, food and faraway places… and our feline friend, Buddy. When we're not visiting our loving families and friends on opposite coasts, we enjoy biking and paddle boarding in the Madison summer, and finishing the day with a home cooked meal. 
 									</p>
 							</div>
 							<!-- Only visible on mobile devices -->
 							<div class="story-timeline__text d-md-none" data-aos="zoom-in-left">
-								<h4>She said yes!</h4>
+								<h4>The Wedding</h4>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 							</div>
 							<img src="https://scontent-msp1-1.xx.fbcdn.net/v/t1.0-9/19030668_10155491889424434_3737741845634291129_n.jpg?_nc_cat=103&_nc_ht=scontent-msp1-1.xx&oh=7ebb0fd655438c6be22172cc651b86ca&oe=5CD95378" alt="She said yes" data-aos="zoom-in-left" />

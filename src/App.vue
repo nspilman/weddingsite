@@ -30,8 +30,9 @@
 <Intro />
 <Story />
 <location :ceremonyTime="ceremonyTime" :receptionTime="receptionTime"/>
+<Travel/>
 <!-- <Food/> -->
-<RSVP :people="loggedInArray" :mode="mode" :open="rsvpOpen" :date="weddingDate"/>
+<!-- <RSVP :people="loggedInArray" :mode="mode" :open="rsvpOpen" :date="weddingDate"/> -->
 	<!--=== Qoute ===-->
 	<section class="quote u-bg-grey">
 		<div class="container">
@@ -97,8 +98,9 @@ import Story from "./components/Story.vue"
 import Location from "./components/Location.vue"
 import Food from "./components/Food.vue"
 import RSVP from "./components/RSVP.vue"
-import TestData from "./components/TestData.vue"
 import People from "./components/People.vue"
+import Travel from "./components/Travel.vue"
+
 
 export default {
   name: "app",
@@ -110,9 +112,8 @@ export default {
 	Location,
 	Food,
 	RSVP,
-	TestData,
-	People,
-
+	People,	
+	Travel,
   },
   data:function(){
 	  return{
