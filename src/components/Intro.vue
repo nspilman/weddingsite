@@ -4,7 +4,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h2 class="u-m-b-5 text-center u-font-script">we are <br>counting down!</h2>
+					<h2 class="u-m-b-5 text-center u-font-script">About <br>Claire and Nate</h2>
 				</div>
 			</div>
 			<div class="row">
@@ -16,7 +16,7 @@
 								<!-- this section is visible when hovered over bride image -->
 								<div>
 									<h4>About Claire</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+									<p>Claire is a lovely young woman from Mercer Island, WA. Claire went to NYU before moving to Madison, WI to meet Nate and begin her first job out of college. Claire loves running, reading, and relaxing with a cup of black tea and Buddy the cat.</p>
 								</div>
 							</div>
 						</div>
@@ -27,17 +27,22 @@
 								<!-- this section is visible when hovered over groom image -->
 								<div>
 									<h4>About Nate</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+									<p>Nate is a strapping young man from Jersey City, NJ. Nate went to Penn State University before moving to Madison, WI to meet Claire and begin his first job out of college. Nate loves playing guitar, cooking, and coding wedding websites with Buddy the cat.</p>
 								</div>
 							</div>
 						</div>
 					</div>
+					<div class = "heart-box">
+					<heart-icon/>
+					<heart-icon/>
+					<heart-icon/>
+					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+			<!-- <div class="row">
+				<div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2"> -->
 					<!-- Counter. Set your date here as data-date="yyyy/mm/dd" -->
-					<ul class="counter-list js-counter clearfix" data-date="2019/03/16">
+					<!-- <ul class="counter-list js-counter clearfix" data-date="2019/03/16">
 						<li class="counter-list__item">
 							<span class="js-counter-days">124</span>
 							<p>days</p>
@@ -59,11 +64,18 @@
 					
 						<heart-icon/>
 						</li>
-					</ul>
+					</ul> -->
 					<!-- end of counter -->
-				</div>
-			</div>
+				<!-- </div> -->
+			<!-- </div> -->
 		</div>
 	</section>
 	<!--== End of intro section. ==-->
 </template>
+
+<style>
+.heart-box{
+	display:flex;
+	justify-content: center;
+}
+</style>

@@ -25,10 +25,12 @@
             <input class="form-control" type="text" v-model="lastName">
           </div>
           <div v-show="groupOptions" id="groupOptions">
-            Please select the correct {{lastName}} group
+            <div class='pleaseSelect'>
+            Please select the correct {{selectLastName}} group
+            </div>
             <button
               v-for="group in groupOptions"
-              class="w-100"
+              class="w-100 groupSelectionButton"
               @click="setGroup(group)"
             >{{group.string}}</button>
           </div>
@@ -83,6 +85,7 @@ export default {
     processLoginInput() {
       const loginGroup = this.getLoginGroup(this.peopleList);
       if (loginGroup.length === 1) {
+        this.selectLastName = this.lastName;
         this.loginGroup = loginGroup[0];
         this.login();
       }
@@ -124,7 +127,8 @@ export default {
       errorMessage: false,
       groupOptions: "",
       loginGroup: "",
-      loggedInArray: ""
+      loggedInArray: "",
+      selectLastName:"",
     };
   },
   props: ["status", "peopleList","date","nameString"],
@@ -135,6 +139,20 @@ export default {
 <style scoped>
 .header {
   height: 100%;
+}
+
+.groupSelectionButton{
+  background-color:var(--blue);
+  color:var(--gold)
+}
+.input-group-text{
+  background-color:var(--blue);
+  color:var(--gold)
+}
+
+.pleaseSelect{
+  width:100%;
+  background-color:var(--red);
 }
 </style>
 
