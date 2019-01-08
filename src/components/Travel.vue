@@ -5,8 +5,18 @@
                 <h3>Flying</h3>
                 </div>
             <div class ='container flightSection'>
-                <div v-for="airport in airports">
-                    {{airport.name}}
+                <div v-for="airport in airports" class='airport'>
+                   <h4> {{airport.name}}</h4>
+                   <h5>Airport Code: {{airport.code}}</h5>
+                   <p>{{airport.description}}</p>
+                   <template v-if="airport.bus">
+                       <hr>
+                       <h4>
+                           Bus from the Airport
+                       </h4>
+                       <p>{{airport.bus}}</p>
+                        <a :href="airport.link"><p>Website Link</p></a>
+                   </template>
                 </div>
             </div>
     </section>
@@ -23,8 +33,13 @@ h2{
 .flightSection{
     background-color:var(--blue);
     color:var(--gold);
-    height:25vh;
     margin-top:2em;
+    padding:2em;
+}
+
+.airport{
+    border:2px solid var(--red);
+    padding:1em;
 }
 
 </style>
@@ -48,7 +63,7 @@ export default {
                     {
                     name:"Chicago International O'Hareport",
                     code:'ORD',
-                    description: "O'Hare is th largest airport around, and is about 3 hours by bus. Flights in an out of O'Hare are likely the cheapest.",
+                    description: "O'Hare is the largest airport around, and is about 3 hours by bus. Flights in an out of O'Hare are likely the cheapest.",
                     bus:"Van Galder shuttles has multiple O'Hare to Madison shuttles daily for $30 each way.",
                     link:"https://www.govangalder.com/Home/TripReservation",
                     }
