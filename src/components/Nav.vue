@@ -9,7 +9,7 @@
 						<li><a href="#story" class="nav-list__link js-nav-link">Our Story</a></li>
 						<li><a href="#location" class="nav-list__link js-nav-link">When & Where</a></li>
 						<!-- <li><a href="#food" class="nav-list__link js-nav-link">the Food</a></li> -->
-						<li><a href="#food" class="nav-list__link js-nav-link">Travel and Lodging</a></li>
+						<li><a href="#travel" class="nav-list__link js-nav-link">Travel and Lodging</a></li>
 						<!-- <li><a href="#food" class="nav-list__link js-nav-link">Activities</a></li> -->
 						<li><a href="#rsvp" class="nav-list__link js-nav-link RSVPLink">RSVP</a></li>
 					</ul>

@@ -31,8 +31,7 @@ h2{
 }
 
 .flightSection{
-    background-color:var(--blue);
-    color:var(--gold);
+    background-color:var(--blue); 
     margin-top:2em;
     padding:2em;
 }
@@ -40,6 +39,7 @@ h2{
 .airport{
     border:2px solid var(--red);
     padding:1em;
+    background-color:white;
 }
 
 </style>
