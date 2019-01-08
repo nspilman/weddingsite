@@ -34,7 +34,7 @@
 <!-- <Food/> -->
 <!-- <RSVP :people="loggedInArray" :mode="mode" :open="rsvpOpen" :date="weddingDate"/> -->
 	<!--=== Qoute ===-->
-	<section class="quote u-bg-grey">
+	<!-- <section class="quote u-bg-grey">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-10 offset-md-1">
@@ -42,7 +42,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 	<!--== End of quote. ==-->
 
 
@@ -65,7 +65,7 @@
 							<li><a href="#">
 						<heart-icon/></a></li>
 						</ul>
-						<p class="footer__copy">All rights reserved &copy; 2018</p>
+						<!-- <p class="footer__copy">All rights reserved &copy; 2018</p> -->
 					</div>
 				</div>
 			</div>

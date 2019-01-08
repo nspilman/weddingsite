@@ -41,7 +41,10 @@ We met in early August in Madison,WI , on the first day of work - our first "rea
 							<!-- Only visible on desktop devices -->
 							<div class="story-timeline__text d-none d-md-block" data-aos="zoom-in-right">
 								<h4><heart-icon/>The Wedding</h4>
-								<p>We're so excited to invite you to where it all began - Madison, Wi - to join us in celebrating our union!</p>
+								<p>We're so excited to invite you to where it all began - Madison, Wi - to join us in celebrating our union! Madison is absolutely beautiful in the summer time, and we look forward to showing off the city in which it all began. 
+
+
+								</p>
 							</div>
 						</div>
 

@@ -1,27 +1,39 @@
 <template>
     <section id="travel">
         	<h2 class="u-font-script text-center u-m-b-5 my-2 py-3">Travel and Lodging</h2>
-            <div class="u-font-script container">
+            
+            <div class ='container flightSection'>
+                <div @click="toggleTravel()" class="u-font-script header container">
                 <h3>Flying</h3>
                 </div>
-            <div class ='container flightSection'>
-                <div v-for="airport in airports" class='airport'>
-                   <h2> {{airport.name}}</h2>
-                   <h5>Airport Code: {{airport.code}}</h5>
-                   <p>{{airport.description}}</p>
-                   <template v-if="airport.bus">
-                       <hr>
-                       <h5>
-                           Bus from the Airport <a :href="airport.link"><span> (website link) </span></a>
-                       </h5>
-                       <p>{{airport.bus}}</p>
-                   </template>
+                <transition name="fade">
+                <Flights v-show="showTravel"/>
+                </transition>
+                <div @click="toggleHotels()" class="u-font-script header container">
+                <h3>Hotels</h3>
                 </div>
+                <transition name="fade">
+                <Hotels v-show="showHotel"/>
+                </transition>
+
             </div>
     </section>
 </template>
 
 <style scoped>
+
+
+.fade-enter-active, .fade-leave-active {
+  transition: height .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  height: 0;
+}
+
+
+
+
+
 #travel{
     background-color:white;
 }
@@ -35,38 +47,41 @@ h2{
     padding:2em;
 }
 
-.airport{
-    border:2px solid var(--red);
+.header{
+    background-color:var(--gold);
+    color:var(--red);
     padding:1em;
-    background-color:white;
+    margin:2px;
 }
+
+.header:hover{
+    cursor: pointer;
+}
+
 
 </style>
 <script>
+import Flights from "./Flights.vue";
+import Hotels from "./Hotels.vue";
 export default {
+       components:{
+                Flights,
+                Hotels,
+
+            },
     data(){
         return{
-            airports:[
-                {
-                    name:'Dane County Regional Airport',
-                    code:'MSN',
-                    description: "Dane County airport is in Madison, and has a fair variety of flight options daily. You'll likely need to connect in Detroit, Minneapolis or Chicago. This may be your most expensive option."
-                    },
-                    {
-                    name:'Miluakee General Mitchell International Airport',
-                    code:'MKE',
-                    description: "Miluakee is about an hour and a half by car or bus from Madison.",
-                    bus:'Badger Bus runs regularly between Miluakee and Madison',
-                    link:'https://www.badgerbus.com/tickets',
-                    },
-                    {
-                    name:"Chicago International O'Hareport",
-                    code:'ORD',
-                    description: "O'Hare is the largest airport around, and is about 3 hours by bus. Flights in an out of O'Hare are likely the cheapest.",
-                    bus:"Van Galder shuttles has multiple O'Hare to Madison shuttles daily for $30 each way.",
-                    link:"https://www.govangalder.com/Home/TripReservation",
-                    }
-            ]
+         
+            showTravel:false,
+            showHotel:false,
+        }
+    },
+    methods:{
+        toggleTravel(){
+            this.showTravel = !this.showTravel;
+        },
+        toggleHotels(){
+            this.showHotel = !this.showHotel;
         }
     }
 }
