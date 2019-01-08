@@ -4,13 +4,13 @@
             
             <div class ='container flightSection'>
                 <div @click="toggleTravel()" class="u-font-script header container">
-                <h3>Flying</h3>
+                <h3>Flying <span v-if="!showTravel"> - Click to expand</span></h3>
                 </div>
                 <transition name="fade">
                 <Flights v-show="showTravel"/>
                 </transition>
                 <div @click="toggleHotels()" class="u-font-script header container">
-                <h3>Hotels</h3>
+                <h3>Hotels <span v-if="!showHotel"> - Click to expand</span></h3>
                 </div>
                 <transition name="fade">
                 <Hotels v-show="showHotel"/>
@@ -23,14 +23,27 @@
 <style scoped>
 
 
-.fade-enter-active, .fade-leave-active {
-  transition: height .5s;
-}
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  height: 0;
+.fade-enter-active,
+.fade-leave-active,
+.fade-move {
+  transition-property: opacity, transform;
 }
 
+.fade-enter {
+  opacity: 0;
+}
 
+.fade-enter-to {
+  opacity: 1;
+}
+
+.fade-leave-active {
+  position: absolute;
+}
+
+.fade-leave-to {
+  opacity: 0;
+}
 
 
 
