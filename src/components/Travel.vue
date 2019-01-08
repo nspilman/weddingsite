@@ -6,16 +6,15 @@
                 </div>
             <div class ='container flightSection'>
                 <div v-for="airport in airports" class='airport'>
-                   <h4> {{airport.name}}</h4>
+                   <h2> {{airport.name}}</h2>
                    <h5>Airport Code: {{airport.code}}</h5>
                    <p>{{airport.description}}</p>
                    <template v-if="airport.bus">
                        <hr>
-                       <h4>
-                           Bus from the Airport
-                       </h4>
+                       <h5>
+                           Bus from the Airport <a :href="airport.link"><span> (website link) </span></a>
+                       </h5>
                        <p>{{airport.bus}}</p>
-                        <a :href="airport.link"><p>Website Link</p></a>
                    </template>
                 </div>
             </div>
