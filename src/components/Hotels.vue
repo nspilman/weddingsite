@@ -1,8 +1,14 @@
 <template>
     <div id ="hotels">
         We recommend finding a place to stay on or near the Isthmus. 
-        Hotels for the weekend of July 13th are on the expensive side, so the wallet concious can find cheaper rates on <a :href="airbnbLink" target="_blank">
-        <span>AirBnB</span> </a>
+        Hotels for the weekend of July 13th are on the expensive side, so the wallet concious can find cheaper rates on 
+        <a :href="airbnbLink" target="_blank">
+        <span>AirBnB.</span> </a>
+      For clarity, and because Isthmus is a dumb word, below is the general area about which we're talking - 
+      <br>
+      <div style="display:flex;justify-content:center;">
+         <img src = "../assets/img/bahbes/madisonMap.jpg">
+         </div>
     </div>
 </template>
 
