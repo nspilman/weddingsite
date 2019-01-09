@@ -220,4 +220,10 @@ html {
 
 /* @import "https://unpkg.com/aos@2.3.1/dist/aos.css" */
 
+@media screen and (max-width: 800px) {
+  body {
+margin-left:20%;
+  }
+}
+
 </style>
