@@ -154,5 +154,13 @@ export default {
   width:100%;
   background-color:var(--red);
 }
+@media screen and (max-width: 600px) {
+  .hero {
+    background-size:auto 100%;
+    background-position:20% 50%;
+  }
+}
+
+
 </style>
 

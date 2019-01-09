@@ -75,5 +75,11 @@ img{
 
 }
 
+@media screen and (max-width: 800px) {
+  .MadisonReveal {
+    width:100%;
+  }
+}
+
 </style>
 
