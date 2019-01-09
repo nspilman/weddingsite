@@ -22,7 +22,7 @@
             <div class="input-group-prepend">
               <span class="input-group-text" id>Last Name</span>
             </div>
-            <input class="form-control" type="text" v-model="lastName">
+            <input class="form-control" type="text" v-model="lastName" @keyup.enter="processLoginInput">
           </div>
           <div v-show="groupOptions" id="groupOptions">
             <div class='pleaseSelect'>
