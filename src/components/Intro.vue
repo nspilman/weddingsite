@@ -11,7 +11,9 @@
 				<div class="col-md-12">
 					<div class="intro-content d-lg-flex">
 						<div class="intro-content__col">
-							<div class="intro-content__img" style="background-image:url('https://scontent-msp1-1.xx.fbcdn.net/v/t1.0-9/15032172_10154784060594434_5334667836668744726_n.jpg?_nc_cat=111&_nc_ht=scontent-msp1-1.xx&oh=786f16747ae94b0f609d2752e1b1e2c8&oe=5C98DC0B');"></div>
+							<div class="intro-content__img">
+								<img src="../assets/img/bahbes/youngClaire.jpeg">
+							</div>
                             <div class="intro-content__text u-bg-primary d-flex align-items-center">
 								<!-- this section is visible when hovered over bride image -->
 								<div>
@@ -22,7 +24,9 @@
 						</div>
 						<heart-icon/>
 						<div class="intro-content__col">
-							<div class="intro-content__img" style="background-image:url('https://scontent.fbed1-1.fna.fbcdn.net/v/t1.0-9/10177260_700111056714568_3468850022687040309_n.jpg?_nc_cat=101&_nc_ht=scontent.fbed1-1.fna&oh=bc18490f5cad9c3d56de82040f3a77e4&oe=5C951EDF');"></div>
+							<div class="intro-content__img">
+								 	<img src="../assets/img/bahbes/youngNate.jpg" style="width:100%;height:100%;">
+							</div>
 							<div class="intro-content__text u-bg-grey d-flex align-items-center">
 								<!-- this section is visible when hovered over groom image -->
 								<div>
@@ -76,6 +80,6 @@
 <style>
 .heart-box{
 	display:flex;
-	justify-content: center;
+	justify-content: center;	
 }
 </style>
