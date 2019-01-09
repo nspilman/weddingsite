@@ -19,7 +19,7 @@
 					<div class="location__text location__text--sm u-bg-grey ml-auto u-m-b-3" data-aos="zoom-in-right">
 						<h6 class="text-uppercase">Wedding Ceremony - {{ceremonyTime}}</h6>
 						<h3>Overture Theater</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						<p>The Overture Center is the local performance arts center, perfect to host all of our wonderful wedding guests.</p>
 					</div>
 					<img src="https://i.pinimg.com/originals/82/dd/69/82dd69d5fd8c3563e360228ecce5431e.jpg" class="location__img location__img--sm ml-auto" alt="Location1" data-aos="zoom-in-right">
 				</div>
@@ -30,7 +30,7 @@
 					<div class="location__text location__text--sm u-bg-grey" data-aos="zoom-in-left">
 						<h6 class="text-uppercase">Reception - {{receptionTime}}</h6>
 						<h3>Overture Center Lobby</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						<p>We'll be celebrating in the Overture lobby, with a wonderful view of the Capitol building, and an equally wonderful dance floor. </p>
 					</div>
 				</div>
 			</div>
