@@ -128,6 +128,12 @@ export default {
 		  groupString:'',
 		  mode:'',   
 		  headerString : '',
+		  gAPI:{
+			gID: '217550576429-errh853p04tstiqb6aidg5tkg3dtnmi0.apps.googleusercontent.com',
+			gkey: 'AIzaSyDpqSmjU9FMye5nPKCegFVx5VEe39nSVIw',
+			disc:["https://sheets.googleapis.com/$discovery/rest?version=v4"],
+			scope:"https://www.googleapis.com/auth/spreadsheets.readonly",
+		  },
 		  rsvpOpen:false,		  
 			   }
   },
@@ -176,9 +182,38 @@ export default {
 		if(keyCheck){this.key = keyCheck;
 		this.login(this.key)}
 	  },
-	   },
+	  initClient(){
+		gapi.client.init({
+          apiKey: this.gAPI.gkey,
+          clientId: this.gAPI.gID,
+          discoveryDocs: this.gAPI.disc,
+          scope: this.gAPI.scope
+        }).then(function () {
+          // Listen for sign-in state changes.
+          gapi.auth2.getAuthInstance().isSignedIn.listen(this.updateSigninStatus);
+
+          // Handle the initial sign-in state.
+          this.updateSigninStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
+          authorizeButton.onclick = handleAuthClick;
+          signoutButton.onclick = handleSignoutClick;
+        }, function(error) {
+          appendPre(JSON.stringify(error, null, 2));
+        });
+	  },
+	  updateSigninStatus(isSignedIn) {
+        if (isSignedIn) {
+          authorizeButton.style.display = 'none';
+          signoutButton.style.display = 'block';
+          listMajors();
+        } else {
+          authorizeButton.style.display = 'block';
+          signoutButton.style.display = 'none';
+        }
+      }
+ },
 	   created(){
-	  	// this.getInvites()
+        gapi.load('client:auth2', this.initClient);
+      
 	   }
   }
 </script>
