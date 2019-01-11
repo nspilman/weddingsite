@@ -171,7 +171,7 @@ export default {
 				if (this.loggedInArray.length == 1){
 					this.mode = 'individual'
 				}
-
+			console.log(this.groupString + "logged in")
 			this.key = localStorage.getItem('key')
 
 }

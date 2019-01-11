@@ -3,8 +3,8 @@
         	<h2 class="u-font-script text-center u-m-b-5 my-2 py-3">Travel and Lodging</h2>
             
             <div class ='container flightSection'>
-                <div @click="toggleTravel()" class="u-font-script header container">
-                <h3>Flying <span v-if="!showTravel"> - Click to expand</span></h3>
+                <div @click="toggleTravel()" class="u-font-script header container text-right">
+                <h3>Flying <span v-if="!showTravel"> Click to expand</span></h3>
                 </div>
                 <transition name="fade">
                 <Flights v-show="showTravel"/>
@@ -65,6 +65,7 @@ h2{
     color:var(--red);
     padding:1em;
     margin:2px;
+    display:flex;
 }
 
 .header:hover{

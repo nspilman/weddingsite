@@ -14,7 +14,7 @@
 							<div class="intro-content__img">
 								<img src="../assets/img/bahbes/youngClaire.jpeg">
 							</div>
-                            <div class="intro-content__text u-bg-primary d-flex align-items-center">
+                            <div class="intro-content__text u-bg-primary d-flex align-items-center claireInfo">
 								<!-- this section is visible when hovered over bride image -->
 								<div>
 									<h4>About Claire</h4>
@@ -27,7 +27,7 @@
 							<div class="intro-content__img">
 								 	<img src="../assets/img/bahbes/youngNate.jpg" style="width:100%;height:100%;">
 							</div>
-							<div class="intro-content__text u-bg-grey d-flex align-items-center">
+							<div class="intro-content__text u-bg-grey d-flex align-items-center nateInfo">
 								<!-- this section is visible when hovered over groom image -->
 								<div>
 									<h4>About Nate</h4>
@@ -77,9 +77,19 @@
 	<!--== End of intro section. ==-->
 </template>
 
-<style>
+<style scope>
 .heart-box{
 	display:flex;
 	justify-content: center;	
+}
+
+.nateInfo{
+	background-color:var(--blue) !important;
+	color:white;
+}
+
+.claireInfo{
+	background-color:var(--red) !important;
+	color:white;
 }
 </style>

@@ -11,6 +11,7 @@ import './assets/css/vendors/slick.css'
 import './assets/css/style.css'
 // import 'https://apis.google.com/js/api.js'
 
+
 new Vue({
   render: h => h(App)
 }).$mount("#app");
