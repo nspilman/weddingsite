@@ -4,7 +4,7 @@
             
             <div class ='container flightSection'>
                 <div @click="toggleTravel()" class="u-font-script header container text-right">
-                <h3>Flying <span v-if="!showTravel"> Click to expand</span></h3>
+                <h3>Flying <span v-if="!showTravel"> - Click to expand</span></h3>
                 </div>
                 <transition name="fade">
                 <Flights v-show="showTravel"/>

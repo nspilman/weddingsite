@@ -26,17 +26,17 @@ export default {
                     description: "Dane County airport is in Madison, and has a fair variety of flight options daily. You'll likely need to connect in Detroit, Minneapolis or Chicago. This may be your most expensive option."
                     },
                     {
-                    name:'Miluakee General Mitchell International Airport',
+                    name:'Milwaukee General Mitchell International Airport',
                     code:'MKE',
-                    description: "Miluakee is about an hour and a half by car or bus from Madison.",
-                    bus:'Badger Bus runs regularly between Miluakee and Madison',
+                    description: "Milwaukee is about an hour and a half by car or bus from Madison.",
+                    bus:'Badger Bus runs regularly between Milwaukee and Madison.',
                     link:'https://www.badgerbus.com/tickets',
                     },
                     {
                     name:"Chicago International O'Hareport",
                     code:'ORD',
-                    description: "O'Hare is the largest airport around, and is about 3 hours by bus. Flights in an out of O'Hare are likely the cheapest.",
-                    bus:"Van Galder shuttles has multiple O'Hare to Madison shuttles daily for $30 each way.",
+                    description: "O'Hare is the largest airport around, and is about 3 hours by bus. Flights in and out of O'Hare are likely the cheapest.",
+                    bus:"Van Galder shuttles has multiple daily O'Hare to Madison shuttles for $30 each way.",
                     link:"https://www.govangalder.com/Home/TripReservation",
                     }
             ],

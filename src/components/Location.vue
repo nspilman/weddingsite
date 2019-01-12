@@ -21,7 +21,7 @@
 						<h3>Overture Theater</h3>
 						<p>The Overture Center is the local performance arts center, perfect to host all of our wonderful wedding guests.</p>
 					</div>
-					<img src="https://i.pinimg.com/originals/82/dd/69/82dd69d5fd8c3563e360228ecce5431e.jpg" class="location__img location__img--sm ml-auto" alt="Location1" data-aos="zoom-in-right">
+					<img src="https://www.broadway.org/galleries/85/items/oveture-center.jpg" class="location__img location__img--sm ml-auto" alt="Location1" data-aos="zoom-in-right">
 				</div>
 
 				<!-- Location: right column -->

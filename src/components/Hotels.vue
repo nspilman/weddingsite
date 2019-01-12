@@ -6,6 +6,11 @@
         <span>AirBnB.</span> </a>
       For clarity, and because Isthmus is a dumb word, below is the general area about which we're talking - 
       <br>
+
+    <p>
+        We are also working on hotel blocks. Check back later.
+    </p>
+
       <div style="display:flex;justify-content:center;">
          <img src = "../assets/img/bahbes/madisonMap.jpg">
          </div>

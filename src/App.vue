@@ -119,7 +119,7 @@ export default {
 	  return{
 		  weddingDate:"July 13, 2019",
 		  ceremonyTime: "5:00PM",
-		  receptionTime:'7:00PM',
+		  receptionTime:'6:00PM',
 		  key:"",
 		  headerHeight:100,
 		  gSheet : "https://sheets.googleapis.com/v4/spreadsheets/1IZwNQYnYAdf2Efo5YlxaMZDs3e1qtVaJge4H7KoUQH0/values/Guestlist?key=AIzaSyB4M6tF4qztX27DmKBzwpat3G5CnBwV1MA",
