@@ -179,7 +179,7 @@ export default {
 			
 	
 		axios.post(
-			'http://142.93.245.126/gsheet',{
+			'https://artsonthehudson.com/921gsheet',{
 				"group":group,
 				"firstname":"testUser",
 				"function":"login"
