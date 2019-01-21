@@ -75,7 +75,6 @@ export default {
      },
     login() {
       if (this.loginGroup != "") {
-        console.log(this.loginGroup)
         this.$emit("login", this.loginGroup);
         this.errorMessage = false;
       } else {

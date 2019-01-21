@@ -134,12 +134,6 @@ export default {
       groupString: "",
       mode: "",
       headerString: "",
-      gAPI: {
-        gID:
-          "1070206136911-4b7anv4ejvgms5oj8ejoc5itpslkburu.apps.googleusercontent.com",
-        gkey: "AIzaSyCj2NOkfpTLg94e26XRE4bL93vkSWF8jNA",
-        scope: "https://www.googleapis.com/auth/spreadsheets.readonly"
-      },
       rsvpOpen: false
     };
   },
@@ -177,17 +171,18 @@ export default {
       console.log(this.groupString + "logged in");
 			this.key = localStorage.getItem("key");
 			
-	
+	if(window.location.hostname != "localhost"){
 		axios.post(
 			'https://artsonthehudson.com/921gsheet',{
 				"group":group,
 				"firstname":"testUser",
 				"function":"login"
-			}
-		).then(response => console.log(response))
+				}
+				).then(response => console.log(response))
     .catch(e => {
       this.errors.push(e)
     })
+			}
     },
     getInvites(array) {
       this.people = array;
@@ -251,7 +246,7 @@ html {
 
 @media screen and (max-width: 800px) {
   body {
-    margin-left: 20%;
+    /* margin-left: .5em !important; */
   }
 }
 </style>
