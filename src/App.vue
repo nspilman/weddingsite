@@ -15,9 +15,6 @@
 </head>-->
 <body>
   <People @gotPeople="getInvites"/>
-  <a href>
-    <div id="logout" @click="logout">Logout</div>
-  </a>
   <Header
     @login="login"
     :nameString="headerString"
@@ -35,17 +32,7 @@
     <Travel/>
     <!-- <Food/> -->
     <!-- <RSVP :people="loggedInArray" :mode="mode" :open="rsvpOpen" :date="weddingDate"/> -->
-    <!--=== Qoute ===-->
-    <!-- <section class="quote u-bg-grey">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-10 offset-md-1">
-					<h3 class="quote__text font-italic">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</h3>
-				</div>
-			</div>
-		</div>
-    </section>-->
-    <!--== End of quote. ==-->
+    
     <!--=== Footer ===-->
     <footer class="footer u-bg-grey">
       <div class="container">
@@ -118,7 +105,7 @@ export default {
     Food,
     RSVP,
     People,
-    Travel
+		Travel,
   },
   data: function() {
     return {

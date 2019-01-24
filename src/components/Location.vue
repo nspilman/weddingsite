@@ -20,6 +20,7 @@
 						<h6 class="text-uppercase">Wedding Ceremony - {{ceremonyTime}}</h6>
 						<h3>Overture Theater</h3>
 						<p>The Overture Center is the local performance arts center, perfect to host all of our wonderful wedding guests.</p>
+						<h6>201 State St, Madison, WI 53703</h6>
 					</div>
 					<img src="https://www.broadway.org/galleries/85/items/oveture-center.jpg" class="location__img location__img--sm ml-auto" alt="Location1" data-aos="zoom-in-right">
 				</div>
@@ -31,6 +32,7 @@
 						<h6 class="text-uppercase">Reception - {{receptionTime}}</h6>
 						<h3>Overture Center Lobby</h3>
 						<p>We'll be celebrating in the Overture lobby, with a wonderful view of the Capitol building, and an equally wonderful dance floor. </p>
+							<h6>201 State St, Madison, WI 53703</h6>
 					</div>
 				</div>
 			</div>

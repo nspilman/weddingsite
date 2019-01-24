@@ -1,6 +1,7 @@
 <template>
   <!--=== Top image and title ===-->
   <header>
+    <emailcollect :show="emailModal" :login-group="nameString" :group="loginGroup" @close="closeEmailCollect"/>
     <div class="hero header d-flex align-items-center justify-content-center row">
       <div class="col-sm-6"></div>
       <div class="text-center col-sm-4">
@@ -47,7 +48,11 @@
 </template>
 
 <script>
+import Emailcollect from "./Emailcollect.vue"
 export default {
+  components:{
+Emailcollect
+  },
   methods: {
     setGroup(group) {
       this.loginGroup = group.group;
@@ -118,6 +123,12 @@ export default {
       var groupString = names.join(joinString);
       const groupObj = { group: group[0].group, string: groupString };
       return groupObj;
+    },
+    closeEmailCollect(){
+
+      console.log(this.emailModal)
+      this.emailModal = false
+      console.log(this.emailModal)
     }
   },
   data() {
@@ -128,6 +139,7 @@ export default {
       loginGroup: "",
       loggedInArray: "",
       selectLastName:"",
+      emailModal:false,
     };
   },
   props: ["status", "peopleList","date","nameString"],
