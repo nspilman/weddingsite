@@ -41,6 +41,11 @@ export default {
                 waysToBook:[
                     {text : 'Call and reserve at 877-510-7465, referencing block code is SHLDWD,'},
                     {text : 'Register online here', link : "https://www.hilton.com/en/hi/groups/personalized/M/MSNMHHF-SHLDWD-20190712/index.jhtml?WT.mc_id=POG"}]
+            },
+            {name : "The AC by Marriott",
+                address: "One N Webster St, Madison, WI 53703, USA",
+                waysToBook:[
+                    {text : 'Booking Information Coming Soon'}]
             }]
         }
     },
