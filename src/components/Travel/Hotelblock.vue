@@ -1,0 +1,45 @@
+<template>
+    <div class = "hotelBlock">
+        <div class = "hotelInfo text-center">
+       <h2>{{hotel.name}}</h2>
+       <h4>{{hotel.address}}</h4>
+       <br>
+       <b class = "py-2"> Booking </b>
+       </div>
+       <div class = "booking text-center">
+       <ul v-for="way in hotel.waysToBook" class= "bookingOptions mx-4">
+           <li v-if="way.link">
+               <a :href="way.link">{{way.text}}</a>
+            </li>
+            <li v-else>
+                {{way.text}}
+                </li>
+       </ul>
+       </div>
+        </div>
+</template>
+
+<style scoped>
+
+.hotelBlock{
+    border:2px solid var(--red);
+    padding:1em;
+    background-color:white;
+    max-width: 28vw;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+}
+</style>
+
+<script>
+export default {
+    data(){
+        return{
+         }
+    },
+    props:
+        ["hotel"]
+}
+</script>

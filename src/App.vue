@@ -90,7 +90,7 @@ import Location from "./components/Location.vue";
 import Food from "./components/Food.vue";
 import RSVP from "./components/RSVP.vue";
 import People from "./components/People.vue";
-import Travel from "./components/Travel.vue";
+import Travel from "./components/Travel/Travel.vue";
 
 import axios from 'axios';
 
@@ -160,7 +160,7 @@ export default {
 			
 	if(window.location.hostname != "localhost"){
 		axios.post(
-			'https://artsonthehudson.com/921gsheet',{
+			'https://natespilman.tech/gsheet',{
 				"group":group,
 				"firstname":"testUser",
 				"function":"login"
