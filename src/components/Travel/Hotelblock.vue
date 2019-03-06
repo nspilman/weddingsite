@@ -7,7 +7,7 @@
        <b class = "py-2"> Booking </b>
        </div>
        <div class = "booking text-center">
-       <ul v-for="way in hotel.waysToBook" class= "bookingOptions mx-4">
+       <ul v-for="way in hotel.waysToBook" class= "bookingOptions mx-4 col-md-4">
            <li v-if="way.link">
                <a :href="way.link" target ="_blank">{{way.text}}</a>
             </li>

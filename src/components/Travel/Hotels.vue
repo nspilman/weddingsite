@@ -7,8 +7,8 @@
       
       <h2 class = "mt-4">Hotel Block Information</h2>
       <br>
-<div class = "hotelBlocksDiv">
-      <div style="display:flex;justify-content:center; max-height:40vh; max-width:30vh">
+<div class = "hotelBlocksDiv row">
+      <div class = 'col-md-4'>
          <img src = "../../assets/img/bahbes/madisonMap.jpg">
          </div>
          <Hotelblock v-for="hotel in hotels" :hotel="hotel" />
