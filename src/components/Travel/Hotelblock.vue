@@ -9,12 +9,13 @@
        <div class = "booking text-center">
        <ul v-for="way in hotel.waysToBook" class= "bookingOptions mx-4">
            <li v-if="way.link">
-               <a :href="way.link">{{way.text}}</a>
+               <a :href="way.link" target ="_blank">{{way.text}}</a>
             </li>
             <li v-else>
                 {{way.text}}
                 </li>
        </ul>
+       <p>{{hotel.price}}</p>
        </div>
         </div>
 </template>
