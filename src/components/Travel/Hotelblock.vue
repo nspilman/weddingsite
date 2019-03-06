@@ -26,7 +26,6 @@
     border:2px solid var(--red);
     padding:1em;
     background-color:white;
-    max-width: 28vw;
     display:flex;
     align-items:center;
     justify-content: center;
