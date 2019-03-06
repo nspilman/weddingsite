@@ -31,7 +31,7 @@
     <location :ceremonyTime="ceremonyTime" :receptionTime="receptionTime"/>
     <Travel/>
     <!-- <Food/> -->
-    <!-- <RSVP :people="loggedInArray" :mode="mode" :open="rsvpOpen" :date="weddingDate"/> -->
+    <RSVP :people="loggedInArray" :mode="mode" :open="rsvpOpen" :date="weddingDate"/>
     
     <!--=== Footer ===-->
     <footer class="footer u-bg-grey">

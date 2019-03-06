@@ -112,6 +112,7 @@
 <script>
 import response from "./RSVPresponseModal.vue";
 import comingSoon from "./comingSoon.vue";
+import axios from "axios";
 
 export default {
   data() {
@@ -136,7 +137,16 @@ export default {
 		 const selectedPerson = this.people.filter(person =>{
 			  return person.firstname === firstname
 		  })[0]
-		  selectedPerson.attending = answer;
+      selectedPerson.attending = answer;
+      axios.post(
+        "https://natespilman.tech/gsheet",
+      {
+        "group":selectedPerson.group,
+				"firstname":selectedPerson.firstname,
+				"rsvp":"yes",
+				"function":"rsvp"
+        }
+      )
 	  },
   },
   props: ["people", "date", "mode","open"],
