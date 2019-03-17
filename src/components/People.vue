@@ -15,7 +15,7 @@ export default {
         await peopleData.forEach(
         line => {
             const obj = {};
-            for(let i = 0; i < line.length; i++){
+            for(let i = 0; i < this.headers.length; i++){
                 obj[this.headers[i]] = line[i]
             }
             this.peopleArray.push(obj)
@@ -47,6 +47,7 @@ export default {
     },
 created(){
     this.getInvites()
+    console.log(this.peopleArray)
 }
 }
 </script>

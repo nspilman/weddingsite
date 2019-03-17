@@ -6,8 +6,7 @@
         <div class="col-xl-10 offset-xl-1">
    
           <response :show="showResponse" @close="closeResponse"/>
-                      <coming-soon/>
-          <div class="submittedGray" v-if="showResponse"></div>
+           <!-- <div class="submittedGray" v-if="showResponse"></div> -->
           <div class="rsvp-box u-bg-white">
         
             <div class="js-form-wrapper">
@@ -35,6 +34,7 @@
                         name="email"
                         placeholder="Your E-mail"
                         class="js-email"
+                        v-model="email"
                         required
                       >
                       <p class="rsvp-form-field__error js-email-error">E-mail is incorrect.</p>
@@ -67,18 +67,20 @@
                       </div>
                     </template>
 
-                    <div class="rsvp-form-field">
+                    <!-- <div class="rsvp-form-field">
                       <select name="attending" required>
                         <option value disabled selected>You are attending?</option>
                         <option value="all">All</option>
                         <option value="ceremony">Ceremony</option>
                         <option value="party">Dinner & Party</option>
                       </select>
-                    </div>
+                    </div> -->
                   </div>
                   <div class="rsvp-form__right">
+                     <h4 class ="u-font-script text-center pb-2"> Attending? </h4>
+						
                     <div class="rsvp-form-field h-100 individualrsvp">
-							<div class="row attendees">
+                     	<div class="row attendees">
 								<template v-for="person in people">
 								<div class ="col-sm-8">
 									{{person.firstname}} {{person.lastname}}
@@ -111,7 +113,6 @@
 
 <script>
 import response from "./RSVPresponseModal.vue";
-import comingSoon from "./comingSoon.vue";
 import axios from "axios";
 
 export default {
@@ -119,15 +120,33 @@ export default {
     return {
       plusOne: false,
       plusOneName: "",
-      showResponse: false
+      showResponse: false,
+      email:this.people[0].email,
     };
   },
   components: {
     response,
-    comingSoon
   },
   methods: {
     processSubmit() {
+      axios.post(
+        "https://natespilman.tech/gsheet",
+      {
+        "group":this.people[0].group,
+				"firstname":this.people[0].firstname,
+				"plus1":this.plusOneName,
+				"function":"plus1"
+        }
+      )
+      axios.post(
+        "https://natespilman.tech/gsheet",
+      {
+        "group":this.people[0].group,
+				"firstname":this.people[0].firstname,
+				"email":this.email,
+				"function":"email"
+        }
+      )
       this.showResponse = true;
     },
     closeResponse() {
@@ -143,7 +162,7 @@ export default {
       {
         "group":selectedPerson.group,
 				"firstname":selectedPerson.firstname,
-				"rsvp":"yes",
+				"rsvp":answer,
 				"function":"rsvp"
         }
       )
@@ -183,9 +202,11 @@ export default {
   },
   created(){
 	//   console.log(this.attendance)
-	  	  // document.querySelectorAll('.attendingButton')
-        console.log(this.open)
-
+        // document.querySelectorAll('.attendingButton')
+  if(this.people[0].plusonename){
+    this.plusOne = true;
+    this.plusOneName = this.people[0].plusonename
+  }
   }
 };
 </script>

@@ -2,7 +2,15 @@
 <div class = 'outside' v-if="show" @click="close">
     <div id = 'responseModal'>
         <span class ="closedModal" @click="close"> X </span>
-        </div>
+        <div class = "container text-center response-text u-font-script">
+        <h1>
+            Thank you for your submission!
+        </h1>
+        <h3>
+            Your information is updating
+            </h3>
+            </div>
+    </div>
 </div>
 </template>
 
@@ -37,12 +45,23 @@ export default {
     width:100%;
     height:100%;
     position: absolute;
+    background-color:rgba(255,255,255,.5);
+    z-index:1;
 }
 .closedModal{
     font-size: 2rem;
     color: var(--gold);
     margin-left: 96%;
     margin-top: 3%;
+}
+
+.response-text{
+    color: var(--gold);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:75%;
 }
 
 .closedModal:hover{
