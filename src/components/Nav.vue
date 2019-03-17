@@ -11,7 +11,7 @@
 						<!-- <li><a href="#food" class="nav-list__link js-nav-link">the Food</a></li> -->
 						<li><a href="#travel" class="nav-list__link js-nav-link">Travel and Lodging</a></li>
 						<!-- <li><a href="#food" class="nav-list__link js-nav-link">Activities</a></li> -->
-						<li><a href="#" class="nav-list__link js-nav-link RSVPLink" @mouseleave="setRSVP" @mouseover="comingSoon">{{RSVP}}</a></li>
+						<li><a href="#RSVP" class="nav-list__link js-nav-link RSVPLink"> {{RSVP}}</a></li>
 					</ul>
 				</div>
 			</div>
