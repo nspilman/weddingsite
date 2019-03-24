@@ -6,14 +6,14 @@
       <div class="col-sm-6"></div>
       <div class="text-center col-sm-4">
         <img
-          src="../assets/img/wreath-white.svg"
+          src="../../assets/img/wreath-white.svg"
           class="hero__wreath hero__wreath--up"
           alt="Sarah and Mike"
         >
         <h1 class="hero__title u-font-script" data-aos="zoom-in">Claire & Nate</h1>
         <p class="hero__date" data-aos="zoom-in" data-aos-delay="400">{{date}}</p>
         <img
-          src="../assets/img/wreath-white.svg"
+          src="../../assets/img/wreath-white.svg"
           class="hero__wreath hero__wreath--down mb-3"
           alt="Sarah and Mike"
         >

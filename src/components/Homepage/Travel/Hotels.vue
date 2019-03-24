@@ -9,7 +9,7 @@
       <br>
 <div class = "hotelBlocksDiv row">
       <div class = 'col-md-4'>
-         <img src = "../../assets/img/bahbes/madisonMap.jpg">
+         <img src = "../../../assets/img/bahbes/madisonMap.jpg">
          </div>
          <Hotelblock v-for="hotel in hotels" :hotel="hotel" />
          </div>

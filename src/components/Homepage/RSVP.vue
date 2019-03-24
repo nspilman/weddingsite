@@ -16,18 +16,9 @@
                   <mark class="font-weight-bold">{{date}}</mark>
                 </p>
               </div>
-              <form method="POST" class="rsvp-form js-form" id="rsvp-form" action="php/rsvp.php">
+              <form method="POST" class="rsvp-form js-form" id="rsvp-form" action="">
                 <div class="d-md-flex justify-content-between">
-                  <div class="rsvp-form__left">
-                    <div class="rsvp-form-field">
-                      <input
-                        type="text"
-                        name="fullname"
-                        placeholder="Full Name"
-                        :value="this.people[0].firstname + ' ' + this.people[0].lastname"
-                        required
-                      >
-                    </div>
+                  <div class="rsvp-form__left py-5">
                     <div class="rsvp-form-field">
                       <input
                         type="email"
@@ -90,18 +81,24 @@
 								</div>
 								<div class="col-sm-2">
 								<span class = 'attendingButton notAttending' :data-attending="person.attending" @click="setAttending(person.firstname,'no')">No</span>
-									</div>
+									</div>    
+                <transition name="fade">
+                  <div class = 'col-sm-12' v-if="person.attending=='yes'">
+                      <Food :person="person"/>
+                  </div>
+                  </transition>
 									</template>
 								</div>
                       <!-- <textarea rows="4" placeholder="Your Message" class="h-100" name="message"></textarea> -->
                     </div>
                   </div>
                 </div>
-              </form>
-
-              <button type="submit" class="rsvp-form-submit js-submit" @click="processSubmit()">
+                <button type="submit" class="rsvp-form-submit js-submit" @click="processSubmit(e)">
                 <span>Send</span>
               </button>
+              </form>
+
+          
             </div>
           </div>
         </div>
@@ -113,7 +110,9 @@
 
 <script>
 import response from "./RSVPresponseModal.vue";
+import Food from "./Food.vue"
 import axios from "axios";
+
 
 export default {
   data() {
@@ -126,9 +125,11 @@ export default {
   },
   components: {
     response,
+    Food,
   },
   methods: {
-    processSubmit() {
+    processSubmit(e) {
+      // e.preventDefault()
       axios.post(
         "https://natespilman.tech/gsheet",
       {

@@ -12,7 +12,7 @@
 					<div class="intro-content d-lg-flex">
 						<div class="intro-content__col">
 							<div class="intro-content__img">
-								<img src="../assets/img/bahbes/youngClaire.jpeg">
+								<img src="../../assets/img/bahbes/youngClaire.jpeg">
 							</div>
                             <div class="intro-content__text u-bg-primary d-flex align-items-center claireInfo">
 								<!-- this section is visible when hovered over bride image -->
@@ -25,7 +25,7 @@
 						<heart-icon/>
 						<div class="intro-content__col">
 							<div class="intro-content__img">
-								 	<img src="../assets/img/bahbes/youngNate.jpg" style="width:100%;height:100%;">
+								 	<img src="../../assets/img/bahbes/youngNate.jpg" style="width:100%;height:100%;">
 							</div>
 							<div class="intro-content__text u-bg-grey d-flex align-items-center nateInfo">
 								<!-- this section is visible when hovered over groom image -->

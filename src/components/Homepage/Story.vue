@@ -26,7 +26,7 @@ We met in early August in Madison,WI , on the first day of work - our first "rea
 
 								</p>
 							</div>
-							<img src="https://scontent-msp1-1.xx.fbcdn.net/v/t1.0-9/23794955_10155998974194319_117803223703589132_n.jpg?_nc_cat=107&_nc_ht=scontent-msp1-1.xx&oh=3ac618be71127bb86cf150c0036fcdae&oe=5C8E0E53"  alt="Six happy years" data-aos="zoom-in-right"/>
+							<img :src="story2"  alt="" data-aos="zoom-in-right"/>
 							<!-- Only visible on mobile devices -->
 							<div class="story-timeline__text d-md-none" data-aos="zoom-in-right">
 								
@@ -50,7 +50,7 @@ We met in early August in Madison,WI , on the first day of work - our first "rea
 
 						<!-- Story timeline: right column -->
 						<div class="story-timeline__col story-timeline__col--right">
-							<img src="https://scontent-msp1-1.xx.fbcdn.net/v/t1.0-9/26047398_10156141372424434_3246029581249229528_n.jpg?_nc_cat=109&_nc_ht=scontent-msp1-1.xx&oh=777c9f7b62795bbffa1d5131510f17ee&oe=5C8DABAC" alt="First time we met" data-aos="zoom-in-left" />
+							<img :src="story1" alt="First time we met" data-aos="zoom-in-left" />
 							<!-- Only visible on desktop devices -->
 							<div class="story-timeline__text d-none d-md-block" data-aos="zoom-in-left">
 								<h4>Four Happy Years
@@ -77,3 +77,15 @@ We met in early August in Madison,WI , on the first day of work - our first "rea
 	</section>
 	<!--== End of our story timeline. ==-->
 </template>
+<script>
+import story1 from "../../assets/img/bahbes/story1.jpg"
+import story2 from "../../assets/img/bahbes/story2.jpg"
+export default {
+	data(){
+		return{
+			story1:story1,
+			story2:story2
+		}
+	}
+}
+</script>
