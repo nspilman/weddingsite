@@ -16,8 +16,7 @@
     <Story/>
     <location :ceremonyTime="ceremonyTime" :receptionTime="receptionTime" :people="loggedInArray"/>
     <Travel/>
-    <!-- <Food/> -->
-    <!-- <RSVP :people="loggedInArray" :mode="mode" :open="rsvpOpen" :date="weddingDate"/> -->
+    <RSVP :people="loggedInArray" :mode="mode" :open="rsvpOpen" :date="weddingDate"/>
     
     <!--=== Footer ===-->
     <footer class="footer u-bg-grey">
@@ -31,19 +30,13 @@
               <ul class="footer__social">
                 <!-- set your social profiles URL inside href="link to your profile" -->
                 <li>
-                  <a href="#">
                     <heart-icon/>
-                  </a>
                 </li>
                 <li>
-                  <a href="#">
                     <heart-icon/>
-                  </a>
                 </li>
                 <li>
-                  <a href="#">
                     <heart-icon/>
-                  </a>
                 </li>
               </ul>
               <!-- <p class="footer__copy">All rights reserved &copy; 2018</p> -->
@@ -62,7 +55,6 @@ import Nav from "./Homepage/Nav.vue";
 import Intro from "./Homepage/Intro.vue";
 import Story from "./Homepage/Story.vue";
 import Location from "./Homepage/Location.vue";
-import Food from "./Homepage/Food.vue";
 import RSVP from "./Homepage/RSVP.vue";
 import People from "./Homepage/People.vue";
 import Travel from "./Homepage/Travel/Travel.vue";
@@ -77,7 +69,6 @@ export default {
     Intro,
     Story,
     Location,
-    Food,
     RSVP,
     People,
 		Travel,
@@ -154,19 +145,8 @@ export default {
         this.login(this.key);
       }
 		},
-    updateSigninStatus(isSignedIn) {
-      if (isSignedIn) {
-        authorizeButton.style.display = "none";
-        signoutButton.style.display = "block";
-        listMajors();
-      } else {
-        authorizeButton.style.display = "block";
-        signoutButton.style.display = "none";
-      }
-    }
   },
-  created() {
-  }
+  created() {}
 };
 </script>
 

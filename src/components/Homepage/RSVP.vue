@@ -1,14 +1,11 @@
 <template>
   <!--=== RSVP form ===-->
-  <section class="rsvp js-section" id="rsvp">
+  <section class="rsvp js-section" id="RSVP">
     <div class="container">
       <div class="row">
         <div class="col-xl-10 offset-xl-1">
-   
           <response :show="showResponse" @close="closeResponse"/>
-           <!-- <div class="submittedGray" v-if="showResponse"></div> -->
           <div class="rsvp-box u-bg-white">
-        
             <div class="js-form-wrapper">
               <div class="text-center">
                 <h3 class="rsvp-box__title u-font-script">{{welcome}}, be our guest!</h3>
@@ -62,8 +59,7 @@
                      <h4 class ="u-font-script text-center pb-2"> Attending? </h4>
 						
                     <div class="rsvp-form-field h-100 individualrsvp">
-                     	<div class="row attendees">
-								<div v-for="person in people" :key="person.firstname">
+            		<div class="row attendees" v-for="person in people" :key="person.firstname">
 								<div class ="col-sm-8">
 									{{person.firstname}} {{person.lastname}}
 								</div>
@@ -82,9 +78,8 @@
 								</div>
                       <!-- <textarea rows="4" placeholder="Your Message" class="h-100" name="message"></textarea> -->
                     </div>
-                  </div>
                 </div>
-                <button type="submit" class="rsvp-form-submit js-submit" @click="processSubmit(e)">
+                <button type="submit" class="rsvp-form-submit js-submit" @click="processSubmit">
                 <span>Send</span>
               </button>
               </form>
@@ -120,7 +115,7 @@ export default {
   },
   methods: {
     processSubmit(e) {
-      // e.preventDefault()
+      e.preventDefault()
       axios.post(
         "https://natespilman.tech/gsheet",
       {
@@ -239,7 +234,8 @@ export default {
 }
 
 .attendees{
-	color:var(--gold)
+	color:var(--gold);
+  margin:1em;
 }
 
 .attendingButton:hover{
