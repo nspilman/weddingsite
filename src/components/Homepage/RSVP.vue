@@ -57,22 +57,13 @@
                         </transition>
                       </div>
                     </template>
-
-                    <!-- <div class="rsvp-form-field">
-                      <select name="attending" required>
-                        <option value disabled selected>You are attending?</option>
-                        <option value="all">All</option>
-                        <option value="ceremony">Ceremony</option>
-                        <option value="party">Dinner & Party</option>
-                      </select>
-                    </div> -->
                   </div>
                   <div class="rsvp-form__right">
                      <h4 class ="u-font-script text-center pb-2"> Attending? </h4>
 						
                     <div class="rsvp-form-field h-100 individualrsvp">
                      	<div class="row attendees">
-								<template v-for="person in people">
+								<div v-for="person in people" :key="person.firstname">
 								<div class ="col-sm-8">
 									{{person.firstname}} {{person.lastname}}
 								</div>
@@ -87,7 +78,7 @@
                       <Food :person="person"/>
                   </div>
                   </transition>
-									</template>
+									</div>
 								</div>
                       <!-- <textarea rows="4" placeholder="Your Message" class="h-100" name="message"></textarea> -->
                     </div>

@@ -6,7 +6,6 @@
 export default {
     methods:{
        async getInvites(){
-           console.log(this.endpoint)
         const response =  await fetch(this.endpoint)
         const json = await response.json();
         const responseValues = await json.values
@@ -22,20 +21,8 @@ export default {
         }
     )
     this.$emit("gotPeople",this.peopleArray)
-    // console.log(data)
-  // Work with JSON data here
-  
-//   console.log(this.headers)
-//   data.values.forEach(person => console.log(person))
-// this.writeData(data)
-},
-// }).catch(err => {
-//   console.log('this data pull broke')
-// });,
-    writeData(data){
-        console.log(data)
-    }
-},
+        },
+    },
  data(){
         return {
             headers:'',
@@ -47,7 +34,7 @@ export default {
     },
 created(){
     this.getInvites()
-    console.log(this.peopleArray)
+    // console.log(this.peopleArray)
 }
 }
 </script>

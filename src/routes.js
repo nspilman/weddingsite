@@ -11,10 +11,8 @@ export default [
     path:"/thebahbecave",
     component: Bahbecave
 },
-
 {
-    path:"/*",
+    path:"*",
     component: Home
 },
-
 ];
