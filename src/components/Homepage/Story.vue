@@ -20,10 +20,7 @@
 									<heart-icon/>
 									Our Beginnings</h4>
 								<p>
-									
-
-We met in early August in Madison,WI , on the first day of work - our first "real adult job" after graduating college.  The chemistry was there from the start. We helped each other through the difficulties of a new job, explored the city of Madison, and grew closer and closer. By Christmas, we were an item! 
-
+									We met in early August 2014 in Madison.  For both of us, it was our first day of work and our first “real adult job” after graduating college. The chemistry was there from the start. We explored the wonderful city of Madison, shared our interests, helped each other through the difficulties of a new job, and grew closer and closer. By Christmas, we were an item!
 								</p>
 							</div>
 							<img :src="story2"  alt="" data-aos="zoom-in-right"/>
@@ -35,15 +32,14 @@ We met in early August in Madison,WI , on the first day of work - our first "rea
 									<heart-icon/>
 									Four Happy Years</h4>
 								<p>
-									We've built our relationship on love for family, friends, food and faraway places… and our feline friend, Buddy. 
+									We've built our relationship on mutual love for family, friends, food, and faraway places… and our feline friend, Buddy. When we're not visiting our loving families and friends on opposite coasts, we enjoy biking, paddle-boarding, and finishing the day with a home-cooked meal.
 								</p>
 							</div>
 							<!-- Only visible on desktop devices -->
 							<div class="story-timeline__text d-none d-md-block" data-aos="zoom-in-right">
 								<h4><heart-icon/>The Wedding</h4>
-								<p>We're so excited to invite you to where it all began - Madison, WI - to join us in celebrating our union! Madison is absolutely beautiful in the summer time, and we look forward to showing off the city in which it all began. 
-
-
+								<p>
+									  We're so excited to invite you to where it all began - Madison, WI - to join us in celebrating our union! Madison is absolutely beautiful in the summertime and we look forward to showing off the city.
 								</p>
 							</div>
 						</div>

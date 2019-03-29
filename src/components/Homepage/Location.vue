@@ -23,25 +23,20 @@
 						<h6>931 E Main St #8, Madison, WI 53703</h6>
 					</div>
 					<img src="https://www.broadway.org/galleries/85/items/oveture-center.jpg" class="location__img location__img--sm ml-auto" alt="Location1" data-aos="zoom-in-right">
-					<div class="location__text location__text--sm u-bg-grey ml-auto u-m-b-3" data-aos="zoom-in-right">
-					 <h6 class="text-uppercase">Reception - {{receptionTime}} - July 13</h6>
-						<h3>Overture Center Lobby</h3>
-						<p>We'll be celebrating in the Overture lobby, with a wonderful view of the Capitol building, and an equally wonderful dance floor. </p>
-							<h6>201 State St, Madison, WI 53703</h6>
 					</div>
-				</div>
 
 				<!-- Location: right column -->
 				<div class="col-md-6">
 						<img v-if="people[0].rehearsaldinner === '1'" src="http://oldsugardistillery.com/images/rh_2.jpg" class="location__img location__img--sm" alt="Location" data-aos="zoom-in-left">
 					<div class="location__text location__text--sm u-bg-grey" data-aos="zoom-in-left">
-					<h6 class="text-uppercase">Wedding Ceremony - {{ceremonyTime}} - July 13</h6>
+					<h6 class="text-uppercase">Wedding Ceremony and Reception - {{ceremonyTime}} - July 13</h6>
 						<h3>Overture Theater</h3>
-						<p>The Overture Center is the local performance arts center, perfect to host all of our wonderful wedding guests.</p>
+						<p>
+							Both the ceremony and reception will take place at The Overture Center, a performing arts center in downtown Madison.  If you are staying on the square (around the capital), it’s within walking distance.  If not, Ubers are readily available and there are plenty of nearby parking garages.
+						</p>
 						<h6>201 State St, Madison, WI 53703</h6>
 					</div>
-					<img src="http://files-overturecenter.s3.amazonaws.com/1d191588ba2faca12c1623a6b028017f/overturehallmainlobby.jpg" class="location__img location__img--sm" alt="Location" data-aos="zoom-in-left">
-				</div>
+					</div>
 			</div>
 		</div>
 	</section>
