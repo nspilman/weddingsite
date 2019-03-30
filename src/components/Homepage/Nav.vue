@@ -11,7 +11,7 @@
 						<!-- <li><a href="#food" class="nav-list__link js-nav-link">the Food</a></li> -->
 						<li><a href="#travel" class="nav-list__link js-nav-link">Travel and Lodging</a></li>
 						<!-- <li><a href="#food" class="nav-list__link js-nav-link">Activities</a></li> -->
-						<li> <a href = "http://thkfl.com/claireandnate" target= "_blank" class = "nav-list__link js-nav-link"> Our Registry </a> </li>
+						<li> <a href = "https://www.amazon.com/wedding/share/claireandnatesavethedate" target= "_blank" class = "nav-list__link js-nav-link"> Our Registry </a> </li>
 						<li><a href="#RSVP" class="nav-list__link js-nav-link RSVPLink">RSVP</a></li>
 					</ul>
 				</div>
