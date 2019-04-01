@@ -41,14 +41,14 @@ export default {
                 address: "9 E Wilson St, Madison, WI 53703, USA",
                 price: "$179",
                 waysToBook:[
-                    {text : 'Call and reserve at 877-510-7465, referencing block code is SHLDWD. Call for dates outside 7/12 to 7/14.'},
+                    {text : 'Call and reserve at 877-510-7465, referencing block code is SHLDWD. Call for dates outside 7/12 to 7/14, as rates may be different.'},
                     {text : 'Book Online Here', link : "https://www.hilton.com/en/hi/groups/personalized/M/MSNMHHF-SHLDWD-20190712/index.jhtml?WT.mc_id=POG"},
                 {
                 name : "The AC by Marriott",
                 address: "One N Webster St, Madison, WI 53703, USA",
                 price:'$239',
                 waysToBook:[
-                    {text : 'Call and reserve at 608-286-1337, referencing the "Sherland-Spilman Wedding." Call for dates outside 7/12 to 7/14. '},
+                    {text : 'Call and reserve at 608-286-1337, referencing the "Sherland-Spilman Wedding." Call for dates outside 7/12 to 7/14, as rates may be different. '},
                     {text: "Book Online Here", link: "https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.marriott.com%2Fevents%2Fstart.mi%3Fid%3D1551712143432%26key%3DGRP&data=02%7C01%7Cmglenn%40ncghotels.com%7C3083bf1b387b4eb7901708d6a0b3e6e3%7C305acf5dc4a74f6bb8f927bd4d71f607%7C0%7C0%7C636873091865811243&sdata=1bIwKh19%2F8Qi6uK8jcJf3F8toaWAA%2BkJo5bXk%2BlE2NE%3D&reserved=0"}
             ]
         }
