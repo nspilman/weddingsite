@@ -22,7 +22,7 @@ export default {
 			entreOptions:[
 				{id:1, name:'Top Sirloin',subName:'with cabernet demi-glaze',photo:'', vegitarian:false},
 				{id:2, name:'Glazed Chicken Breast',subName:'with a honey, thyme, and butter sauce',photo:'',vegitarian:false},
-				{id:3, name:'Stuffed Acorn Squash',subName:'with faro and spicy marinaro',photo:'',vegitarian:true}
+				{id:3, name:'Stuffed Acorn Squash',subName:'with faro and spicy marinara sauce',photo:'',vegitarian:true}
 			],
 			selection:null,
 		}
