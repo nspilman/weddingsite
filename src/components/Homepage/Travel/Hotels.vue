@@ -53,8 +53,8 @@ export default {
             ]
         }
         ]
-    }
-    },
+    }]
+    ,
     components:{
         Hotelblock
     }
