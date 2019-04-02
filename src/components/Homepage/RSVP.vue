@@ -17,6 +17,11 @@
                 <div class="d-md-flex justify-content-between">
                   <div class="rsvp-form__left py-5">
                     <div class="rsvp-form-field">
+
+                       <label
+                            class="rsvp-box__subtitle"
+                            for="email"
+                          >Email</label>
                       <input
                         type="email"
                         name="email"
