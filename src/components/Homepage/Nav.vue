@@ -3,15 +3,35 @@
     <div>
 	<div class="nav u-border-b-grey d-none d-md-block">
 		<div class="container">
+			<transition name="fade">
+				<div id = "modalRegistrySelect"  v-if="showSelect">
+					<div class = "modalRegistrySelect">
+						<span id = "close" @click="showSelect = !showSelect">
+							<h4>
+								X
+							</h4>
+						</span>
+						<h3 class = "modalText js-nav-link">SELECT A REGISTRY</h3>
+						<div class = "buttonGroup">
+							<a v-for="registry in registries" target ="_blank" :key="registry.name" :href="registry.website">
+								<div class="registryButton">
+									{{registry.name}}
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</transition>
 			<div class="row">
 				<div class="col-sm-12">
 					<ul class="nav-list">
 						<li><a href="#story" class="nav-list__link js-nav-link">Our Story</a></li>
 						<li><a href="#location" class="nav-list__link js-nav-link">When & Where</a></li>
-						<!-- <li><a href="#food" class="nav-list__link js-nav-link">the Food</a></li> -->
 						<li><a href="#travel" class="nav-list__link js-nav-link">Travel and Lodging</a></li>
-						<!-- <li><a href="#food" class="nav-list__link js-nav-link">Activities</a></li> -->
-						<li> <a href = "https://www.amazon.com/wedding/share/claireandnatesavethedate" target= "_blank" class = "nav-list__link js-nav-link"> Our Registry </a> </li>
+						<li><a href="#activities" class="nav-list__link js-nav-link">Weekend Activities</a></li>
+						<li>
+							<span class = "nav-list__link js-nav-link text-white" @click="showSelect=!showSelect"> Our Registry </span>
+						</li>
 						<li><a href="#RSVP" class="nav-list__link js-nav-link RSVPLink">RSVP</a></li>
 					</ul>
 				</div>
@@ -42,13 +62,76 @@
 <script>
 export default {
     data(){
-		return{}
+		return{
+			registries:[
+				{
+					name:'Amazon',
+					website:'https://www.amazon.com/wedding/share/claireandnatesavethedate'
+				},
+				{
+					name:'Target',
+					website:'https://tgt.gifts/ClaireandNate'
+				}
+			],
+			showSelect:false
+		}
 	},
 	methods:{}
 }
 </script>
 
 <style scoped>
+
+
+
+#modalRegistrySelect{
+	position: fixed;
+	top:0;
+	left:0;
+	width:100vw;
+	height:100vh;
+	z-index: .7;
+	display:flex;
+	align-items: center;
+	justify-content:center;
+	background-color:rgb(255,255,255,.6);
+}
+
+.modalRegistrySelect{
+	width:35vw;
+	height:25vh;
+	z-index: 1;
+	display:flex;
+	align-items: center;
+	justify-content:center;
+	flex-direction: column;
+	background-color:var(--gold);
+	border-radius: 25px;
+}
+
+#close{
+	position:fixed;
+	left:65%;
+	top:39%;
+	cursor:pointer;
+}
+
+.buttonGroup{
+	display:flex;
+	margin-top:1em;
+}
+
+.registryButton{
+	background-color:var(--red);
+	margin:.3em;
+	padding:.7em;
+	border-radius:.7em;
+	transition:500ms;
+}
+
+.registryButton:hover{
+	background-color:var(--blue)
+}
 
 .nav{
     background-color:var(--blue);

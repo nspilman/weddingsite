@@ -11,7 +11,7 @@
       <div class = 'col-md-4'>
          <img src = "../../../assets/img/bahbes/madisonMap.jpg">
          </div>
-         <Hotelblock v-for="hotel in hotels" :hotel="hotel" />
+         <Hotelblock v-for="hotel in hotels" :key="hotel.name" :hotel="hotel" />
          </div>
     </div>
 </template>

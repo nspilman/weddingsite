@@ -16,6 +16,7 @@
     <Story/>
     <location :ceremonyTime="ceremonyTime" :receptionTime="receptionTime" :people="loggedInArray"/>
     <Travel/>
+    <Activities/>
     <RSVP :people="loggedInArray" :mode="mode" :open="rsvpOpen" :date="weddingDate"/>
     
     <!--=== Footer ===-->
@@ -58,6 +59,7 @@ import Location from "./Homepage/Location.vue";
 import RSVP from "./Homepage/RSVP.vue";
 import People from "./Homepage/People.vue";
 import Travel from "./Homepage/Travel/Travel.vue";
+import Activities from "./Homepage/Activities/Activities.vue";
 
 import axios from 'axios';
 
@@ -71,7 +73,8 @@ export default {
     Location,
     RSVP,
     People,
-		Travel,
+    Travel,
+    Activities,
   },
   data: function() {
     return {
