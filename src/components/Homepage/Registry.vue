@@ -4,11 +4,13 @@
 	        <div id = "modalRegistrySelect">
 			    <div class = "modalRegistrySelect">
                     <h2 class="u-font-script text-center u-m-b-5">Registry</h2>
-				    <h3 class = "modalText js-nav-link">
+				    <h4 class = "modalText js-nav-link">
                         YOUR PRESENCE IS OUR GIFT 
-                    </h3>
+                    </h4>
                     <p>
-                        We've registered at the two stores below. We would also greatly appreciate charitable donations to Planned Parenthood and Amara.
+                        If you choose to get us a gift, we've registered at the two stores below. 
+                        <br>
+                        In lieu of gifts, we would also greatly appreciate charitable donations to Planned Parenthood or Amara.
                     </p>
                     <h4>Stores</h4>
                     <div class = "buttonGroup">
