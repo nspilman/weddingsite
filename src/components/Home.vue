@@ -14,11 +14,11 @@
     <Nav/>
     <Intro/>
     <Story/>
+    <Registry/>
     <location :ceremonyTime="ceremonyTime" :receptionTime="receptionTime" :people="loggedInArray"/>
     <Travel/>
     <Activities/>
     <RSVP :people="loggedInArray" :mode="mode" :open="rsvpOpen" :date="weddingDate"/>
-    
     <!--=== Footer ===-->
     <footer class="footer u-bg-grey">
       <div class="container">
@@ -58,6 +58,7 @@ import Story from "./Homepage/Story.vue";
 import Location from "./Homepage/Location.vue";
 import RSVP from "./Homepage/RSVP.vue";
 import People from "./Homepage/People.vue";
+import Registry from "./Homepage/Registry.vue";
 import Travel from "./Homepage/Travel/Travel.vue";
 import Activities from "./Homepage/Activities/Activities.vue";
 
@@ -75,6 +76,7 @@ export default {
     People,
     Travel,
     Activities,
+    Registry,
   },
   data: function() {
     return {

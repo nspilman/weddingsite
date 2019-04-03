@@ -26,5 +26,6 @@ export default {
 <style scoped>
     .activity{
       background-color: white;
+      cursor:pointer;
     }
 </style>
