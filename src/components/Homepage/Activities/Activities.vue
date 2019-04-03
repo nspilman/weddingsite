@@ -68,7 +68,7 @@ export default {
 .activityBox{
     padding:2em;
     margin-top:2em;
-    background-color: white;
+    background-color: var(--ivory);
 }
 
 

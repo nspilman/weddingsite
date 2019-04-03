@@ -20,7 +20,7 @@
     <Activities/>
     <RSVP :people="loggedInArray" :mode="mode" :open="rsvpOpen" :date="weddingDate"/>
     <!--=== Footer ===-->
-    <footer class="footer u-bg-grey">
+    <footer class="footer">
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
@@ -189,6 +189,10 @@ html {
   color: var(--gold);
 }
 
+.footer{
+  background-color:var(--ivory);
+}
+
 /* @import "https://unpkg.com/aos@2.3.1/dist/aos.css" */
 
 @media screen and (max-width: 800px) {
@@ -196,4 +200,5 @@ html {
     /* margin-left: .5em !important; */
   }
 }
+
 </style>

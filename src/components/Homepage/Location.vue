@@ -15,7 +15,7 @@
 
 			<div class="row">
 				<!-- Location: left column -->
-				<div class="col-md-6">
+				<div class="col-md-6 textBox py-3">
 					<div v-if="people[0].rehearsaldinner === '1'" class="location__text location__text--sm u-bg-grey ml-auto u-m-b-3" data-aos="zoom-in-right">
 						<h6 class="text-uppercase">Rehearsal Dinner - 6PM - July 12</h6>
 						<h3>The Rickhouse at Old Sugar Distillery</h3>
@@ -26,7 +26,7 @@
 					</div>
 
 				<!-- Location: right column -->
-				<div class="col-md-6">
+				<div class="col-md-6 textBox py-3">
 						<img v-if="people[0].rehearsaldinner === '1'" src="http://oldsugardistillery.com/images/rh_2.jpg" class="location__img location__img--sm" alt="Location" data-aos="zoom-in-left">
 					<div class="location__text location__text--sm u-bg-grey" data-aos="zoom-in-left">
 					<h6 class="text-uppercase">Wedding Ceremony and Reception - {{ceremonyTime}} - July 13</h6>
@@ -55,6 +55,14 @@ img{
 	max-height:100%;
 	height:50vh;
 	width: 95%;
+}
+
+.textBox{
+	background-color:var(--blue);
+}
+
+.location__text{
+	background-color:var(--ivory);
 }
 
 .MadisonReveal{

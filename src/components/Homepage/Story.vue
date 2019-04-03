@@ -85,3 +85,11 @@ export default {
 	}
 }
 </script>
+
+
+<style>
+#story{
+	background-color:var(--ivory)
+}
+
+</style>
