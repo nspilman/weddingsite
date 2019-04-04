@@ -59,7 +59,7 @@ export default {
 			}
 			console.log(this.apiFunc)
 			axios.post(
-				"https:/natespilman.tech/gsheet",
+				"https://natespilman.tech/gsheet",
 				{
         		"group":this.person.group,
 						"firstname":this.person.firstname,
