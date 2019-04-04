@@ -7,7 +7,7 @@
 		<transition name="fade">
 		<div v-if="open===true">
 			<span class>
-				<h2 @click="open = !open"> ^ </h2> 
+				<h3 style="cursor:pointer" @click="open = !open"> ^ </h3> 
 				 </span>
 		<h6>Please select your entree</h6>
 		<div class="form-check py-1" v-for ="option in entreOptions" :key="option.name">
@@ -36,6 +36,7 @@ export default {
 			],
 			selection:null,
 			open:false,
+			apiFunc:null,
 		}
 	},
 	computed:{
@@ -50,21 +51,34 @@ export default {
 	},
 	watch:{
 		selection(){
-			this.person.foodselection = this.selection
+			if(this.apiFunc === "food"){
+			this.person.foodselection = this.selection;
+			}
+			else{
+				this.person.plusonefood = this.selection;
+			}
+			console.log(this.apiFunc)
 			axios.post(
-				"https://natespilman.tech/gsheet",
+				"https:/natespilman.tech/gsheet",
 				{
         		"group":this.person.group,
-				"firstname":this.person.firstname,
-				"selection":this.selection,
-				"function":"food"
+						"firstname":this.person.firstname,
+						"selection":this.selection,
+						"function":this.apiFunc,
 				}
 			)
 		}
 	},
-	props:['person'],
+	props:['person', 'plusOne'],
 	created(){
-		this.selection = this.person.foodselection 
+	const apiFunc = this.plusOne ? 'plusOneFood' : 'food'
+	this.apiFunc = apiFunc
+	if(this.apiFunc === "food"){		
+		this.selection = this.person.foodselection;
+		}
+	else{
+		this.selection = this.person.plusonefood;
+	}
 	}
 	
 }

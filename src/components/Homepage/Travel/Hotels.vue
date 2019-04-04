@@ -21,7 +21,7 @@
 #hotels{
     border:2px solid var(--red);
     padding:1em;
-    background-color:white;
+    background-color:var(--ivory);
 }
 
 .hotelBlocksDiv{

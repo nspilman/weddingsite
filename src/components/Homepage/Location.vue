@@ -19,7 +19,7 @@
 					<div v-if="people[0].rehearsaldinner === '1'" class="location__text location__text--sm u-bg-grey ml-auto u-m-b-3" data-aos="zoom-in-right">
 						<h6 class="text-uppercase">Rehearsal Dinner - 6PM - July 12</h6>
 						<h3>The Rickhouse at Old Sugar Distillery</h3>
-						<p>The Rickhouse is a beautiful event space attached to Madison's Old Sugar Distillery</p>
+						<p>The Rickhouse is a beautiful event space attached to Madison's Old Sugar Distillery. There is ample street parking.</p>
 						<h6>931 E Main St #8, Madison, WI 53703</h6>
 					</div>
 					<img src="https://www.broadway.org/galleries/85/items/oveture-center.jpg" class="location__img location__img--sm ml-auto" alt="Location1" data-aos="zoom-in-right">

@@ -1,6 +1,6 @@
 <template>
 <div>
-    <div v-for="airport in airports" class='airport'>
+    <div v-for="airport in airports" class='airport' :key="airport.name">
                    <h2> {{airport.name}}</h2>
                    <h5>Airport Code: {{airport.code}}</h5>
                    <p>{{airport.description}}</p>
@@ -50,6 +50,6 @@ export default {
 .airport{
     border:2px solid var(--red);
     padding:1em;
-    background-color:white;
+    background-color:var(--ivory);
 }
 </style>

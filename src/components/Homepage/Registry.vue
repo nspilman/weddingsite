@@ -2,11 +2,11 @@
     <transition name="fade">
         <section id ="registry">
 	        <div id = "modalRegistrySelect">
-			    <div class = "modalRegistrySelect">
-                    <h2 class="u-font-script text-center u-m-b-5">Registry</h2>
-				    <h4 class = "modalText js-nav-link">
+			    <div class = "modalRegistrySelect text-center">
+                    <h2 class="u-font-script text-center pb-2">Registry</h2>
+				   <i> <h5 class = "modalText js-nav-link">
                         YOUR PRESENCE IS OUR GIFT 
-                    </h4>
+                    </h5></i>
                     <p>
                         If you choose to get us a gift, we've registered at the two stores below. 
                         <br>
@@ -84,7 +84,6 @@ export default {
 	align-items: center;
 	justify-content:center;
 	flex-direction: column;
-	background-color:var(--gold);
 	border-radius: 25px;
 }
 

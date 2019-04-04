@@ -40,7 +40,7 @@
           <br>
           <button class="btn" v-on:click="processLoginInput">Go!</button>
         </div>
-        <div v-else class="hero__title u-font-script pb-3">Welcome {{nameString}}</div>
+        <div v-else class="hero__title u-font-script pb-3">Welcome, {{nameString}}</div>
       </div>
     </div>
   </header>

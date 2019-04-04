@@ -14,10 +14,10 @@
     <Nav/>
     <Intro/>
     <Story/>
-    <Registry/>
     <location :ceremonyTime="ceremonyTime" :receptionTime="receptionTime" :people="loggedInArray"/>
     <Travel/>
     <Activities/>
+    <Registry/>
     <RSVP :people="loggedInArray" :mode="mode" :open="rsvpOpen" :date="weddingDate"/>
     <!--=== Footer ===-->
     <footer class="footer">

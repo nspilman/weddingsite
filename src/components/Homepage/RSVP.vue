@@ -17,7 +17,6 @@
                 <div class="d-md-flex justify-content-between">
                   <div class="rsvp-form__left py-5">
                     <div class="rsvp-form-field">
-
                        <label
                             class="rsvp-box__subtitle"
                             for="email"
@@ -77,6 +76,8 @@
                 <transition name="fade">
                   <div class = 'col-sm-12' v-if="person.attending=='yes'">
                       <Food :person="person"/>
+                      {{person.plusonename}}
+                      <Food v-if="plusOneName" :person="person" :plusOne="true"/>
                   </div>
                   </transition>
 									</div>
