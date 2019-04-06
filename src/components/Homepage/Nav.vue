@@ -70,10 +70,8 @@ a{
 	
 }
 .RSVPLink:hover{
-
 	border-bottom: 1px solid --var(gold) !important;
 	color: --var(gold) !important;
-
 }
 
 </style>
