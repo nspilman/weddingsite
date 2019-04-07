@@ -57,9 +57,8 @@ export default {
 			else{
 				this.person.plusonefood = this.selection;
 			}
-			console.log(this.apiFunc)
 			axios.post(
-				"https://natespilman.tech/gsheet",
+				"https://natespilman.tech/wedding",
 				{
         		"group":this.person.group,
 						"firstname":this.person.firstname,
