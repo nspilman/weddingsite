@@ -123,7 +123,7 @@ export default {
     processSubmit(e) {
       e.preventDefault()
       axios.post(
-        "https://natespilman.tech/wedding",
+        "https://natespilman.tech/wedding/",
       {
         "group":this.people[0].group,
 				"firstname":this.people[0].firstname,
@@ -132,7 +132,7 @@ export default {
         }
       )
       axios.post(
-        "https://natespilman.tech/wedding",
+        "https://natespilman.tech/wedding/",
       {
         "group":this.people[0].group,
 				"firstname":this.people[0].firstname,
@@ -151,7 +151,7 @@ export default {
 		  })[0]
       selectedPerson.attending = answer;
       axios.post(
-        "https://natespilman.tech/wedding",
+        "https://natespilman.tech/wedding/",
       {
         "group":selectedPerson.group,
 				"firstname":selectedPerson.firstname,
