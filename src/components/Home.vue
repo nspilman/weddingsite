@@ -131,7 +131,7 @@ export default {
 			
 	if(window.location.hostname != "localhost"){
 		axios.post(
-			'https://natespilman.tech/gsheet',{
+			'https://natespilman.tech/wedding/',{
 				"group":group,
 				"firstname":"testUser",
 				"function":"login"

@@ -58,6 +58,16 @@
                         </transition>
                       </div>
                     </template>
+                    <label
+                            class="form-check-label rsvp-box__subtitle"
+                            for="note"
+                          >Leave us a note!</label>
+                    <textarea
+                            type="textarea"
+                            name="note"
+                            class=""
+                            v-model="note"
+                          />
                   </div>
                   <div class="rsvp-form__right">
                      <h4 class ="u-font-script text-center pb-2"> Attending? </h4>
@@ -113,6 +123,7 @@ export default {
       plusOneName: "",
       showResponse: false,
       email:this.people[0].email,
+      note:null,
     };
   },
   components: {
@@ -129,6 +140,15 @@ export default {
 				"firstname":this.people[0].firstname,
 				"plus1":this.plusOneName,
 				"function":"plus1"
+        }
+      )
+      axios.post(
+        "https://natespilman.tech/wedding/",
+      {
+        "group":this.people[0].group,
+				"firstname":this.people[0].firstname,
+				"note":this.note,
+				"function":"rsvp_note"
         }
       )
       axios.post(
@@ -199,6 +219,7 @@ export default {
   if(this.people[0].plusonename){
     this.plusOne = true;
     this.plusOneName = this.people[0].plusonename
+    this.note = this.people[0].notefromguest
   }
   }
 };
