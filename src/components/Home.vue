@@ -56,7 +56,7 @@ import Nav from "./Homepage/Nav.vue";
 import Intro from "./Homepage/Intro.vue";
 import Story from "./Homepage/Story.vue";
 import Location from "./Homepage/Location.vue";
-import RSVP from "./Homepage/RSVP.vue";
+import RSVP from "./Homepage/RSVP/RSVP.vue";
 import People from "./Homepage/People.vue";
 import Registry from "./Homepage/Registry.vue";
 import Travel from "./Homepage/Travel/Travel.vue";

@@ -68,37 +68,53 @@
                             class=""
                             v-model="note"
                           />
+                <div class="rsvp-form-field individualrsvp">
+            		  <div class="row attendees" v-for="person in people" :key="person.firstname">
+								    <div class ="col-sm-8">
+									    {{person.firstname}} {{person.lastname}}
+								    </div>
+								    <div class="col-sm-2">
+									    <span class = 'attendingButton attending' :data-attending="person.rehearsaldinnerattending" @click="setAttending(person.firstname,'rsvp_rehearsal','yes')">Yes</span>
+								    </div>
+								    <div class="col-sm-2">
+								      <span class = 'attendingButton notAttending' :data-attending="person.rehearsaldinnerattending" @click="setAttending(person.firstname,'rsvp_rehearsal','no')">No</span>
+									  </div>    
+									</div>
+								</div>
+
+              
+
                   </div>
                   <div class="rsvp-form__right">
                      <h4 class ="u-font-script text-center pb-2"> Attending? </h4>
 						
-                    <div class="rsvp-form-field h-100 individualrsvp">
-            		<div class="row attendees" v-for="person in people" :key="person.firstname">
-								<div class ="col-sm-8">
-									{{person.firstname}} {{person.lastname}}
-								</div>
-								<div class="col-sm-2">
-									<span class = 'attendingButton attending' :data-attending="person.attending" @click="setAttending(person.firstname,'yes')">Yes</span>
-								</div>
-								<div class="col-sm-2">
-								<span class = 'attendingButton notAttending' :data-attending="person.attending" @click="setAttending(person.firstname,'no')">No</span>
-									</div>    
-                <transition name="fade">
-                  <div class = 'col-sm-12' v-if="person.attending=='yes'">
-                      <Food :person="person"/>
-                      {{person.plusonename}}
-                      <Food v-if="plusOneName" :person="person" :plusOne="true"/>
-                  </div>
-                  </transition>
+                <div class="rsvp-form-field h-75 individualrsvp">
+            		  <div class="row attendees" v-for="person in people" :key="person.firstname">
+								    <div class ="col-sm-8">
+									    {{person.firstname}} {{person.lastname}}
+								    </div>
+								    <div class="col-sm-2">
+									    <span class = 'attendingButton attending' :data-attending="person.attending" @click="setAttending(person.firstname,'rsvp','yes')">Yes</span>
+								    </div>
+								    <div class="col-sm-2">
+								      <span class = 'attendingButton notAttending' :data-attending="person.attending" @click="setAttending(person.firstname,'rsvp','no')">No</span>
+									  </div>    
+                    <transition name="fade">
+                      <div class = 'col-sm-12' v-if="person.attending=='yes'">
+                        <Food :person="person"/>
+                        {{person.plusonename}}
+                        <Food v-if="plusOneName" :person="person" :plusOne="true"/>
+                      </div>
+                    </transition>
 									</div>
 								</div>
                       <!-- <textarea rows="4" placeholder="Your Message" class="h-100" name="message"></textarea> -->
-                    </div>
-                </div>
-                <button type="submit" class="rsvp-form-submit js-submit" @click="processSubmit">
+              </div>
+            </div>
+            <button type="submit" class="rsvp-form-submit js-submit" @click="processSubmit">
                 <span>Send</span>
-              </button>
-              </form>
+            </button>
+          </form>
 
           
             </div>
@@ -165,18 +181,23 @@ export default {
     closeResponse() {
       this.showResponse = false;
 	},
-	setAttending(firstname,answer){
+	setAttending(firstname,func,answer){
 		 const selectedPerson = this.people.filter(person =>{
 			  return person.firstname === firstname
-		  })[0]
+      })[0]
+      if(func === "rsvp"){
       selectedPerson.attending = answer;
+      }
+      if(func === "rsvp_rehearsal"){
+        selectedPerson.reheasaldinnerattending = answer
+      }
       axios.post(
         "https://natespilman.tech/wedding/",
       {
         "group":selectedPerson.group,
 				"firstname":selectedPerson.firstname,
 				"rsvp":answer,
-				"function":"rsvp"
+				"function":func,
         }
       )
 	  },
@@ -240,7 +261,6 @@ export default {
 .notAttending[data-attending='no']{
 	color:red;
 }
-
 .submittedGray {
   width: 97%;
   height: 100%;

@@ -58,7 +58,7 @@ export default {
 				this.person.plusonefood = this.selection;
 			}
 			axios.post(
-				"https://natespilman.tech/wedding",
+				"https://natespilman.tech/wedding/",
 				{
         		"group":this.person.group,
 						"firstname":this.person.firstname,
