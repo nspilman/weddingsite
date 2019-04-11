@@ -68,6 +68,8 @@
                             class=""
                             v-model="note"
                           />
+                <template v-if="people[0].rehearsaldinner===1">
+                           <h6 class ="u-font-script text-center pb-2"> Attending the Rehearsal Dinner? </h6>
                 <div class="rsvp-form-field individualrsvp">
             		  <div class="row attendees" v-for="person in people" :key="person.firstname">
 								    <div class ="col-sm-8">
@@ -81,14 +83,14 @@
 									  </div>    
 									</div>
 								</div>
-
+             </template>
               
 
                   </div>
                   <div class="rsvp-form__right">
                      <h4 class ="u-font-script text-center pb-2"> Attending? </h4>
 						
-                <div class="rsvp-form-field h-75 individualrsvp">
+                <div class="rsvp-form-field h-100 individualrsvp">
             		  <div class="row attendees" v-for="person in people" :key="person.firstname">
 								    <div class ="col-sm-8">
 									    {{person.firstname}} {{person.lastname}}
@@ -235,7 +237,7 @@ export default {
     }
   },
   created(){
-	//   console.log(this.attendance)
+	  console.log(this.people[0].reheasaldinnerattending)
         // document.querySelectorAll('.attendingButton')
   if(this.people[0].plusonename){
     this.plusOne = true;
