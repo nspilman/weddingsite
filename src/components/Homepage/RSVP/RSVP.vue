@@ -68,7 +68,7 @@
                             class=""
                             v-model="note"
                           />
-                <template v-if="people[0].rehearsaldinner===1">
+                <template v-if="people[0].rehearsaldinner==1">
                            <h6 class ="u-font-script text-center pb-2"> Attending the Rehearsal Dinner? </h6>
                 <div class="rsvp-form-field individualrsvp">
             		  <div class="row attendees" v-for="person in people" :key="person.firstname">
@@ -191,7 +191,7 @@ export default {
       selectedPerson.attending = answer;
       }
       if(func === "rsvp_rehearsal"){
-        selectedPerson.reheasaldinnerattending = answer
+        selectedPerson.rehearsaldinnerattending = answer
       }
       axios.post(
         "https://natespilman.tech/wedding/",
@@ -237,7 +237,7 @@ export default {
     }
   },
   created(){
-	  console.log(this.people[0].reheasaldinnerattending)
+	  console.log(" rehearsaldinnerattending - ")
         // document.querySelectorAll('.attendingButton')
   if(this.people[0].plusonename){
     this.plusOne = true;
