@@ -93,5 +93,15 @@ export default {
 
 .selectionBoilerPlate{
 	cursor: pointer;
+	padding:1em;
+	background-color:var(--red);
+	border-radius:1em;
+	transition:.5s;
 }
+
+.selectionBoilerPlate:hover{
+	background-color:var(--ivory);
+	color:var(--blue);
+}
+
 </style>
