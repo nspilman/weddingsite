@@ -57,6 +57,7 @@ export default {
 			else{
 				this.person.plusonefood = this.selection;
 			}
+			if(this.selection){
 			axios.post(
 				"https://natespilman.tech/wedding/",
 				{
@@ -64,8 +65,8 @@ export default {
 						"firstname":this.person.firstname,
 						"selection":this.selection,
 						"function":this.apiFunc,
-				}
-			)
+			})
+			}
 		}
 	},
 	props:['person', 'plusOne'],
