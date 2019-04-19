@@ -21,7 +21,7 @@
 						<h3>The Rickhouse at Old Sugar Distillery</h3>
 						<p>The Rickhouse is a beautiful event space attached to Madison's Old Sugar Distillery. There is ample street parking.</p>
 						<h6>931 E Main St #8, Madison, WI 53703</h6>
-						<h6>Attire:<b>Cocktail Casual</b></h6>
+						<h6>Attire: <b>Cocktail Casual</b></h6>
 					</div>
 					<img src="https://www.broadway.org/galleries/85/items/oveture-center.jpg" class="location__img location__img--sm ml-auto" alt="Location1" data-aos="zoom-in-right">
 					</div>
@@ -36,7 +36,7 @@
 							Both the ceremony and reception will take place at The Overture Center, a performing arts center in downtown Madison.  If you are staying on the square (around the capital), it’s within walking distance.  If not, Ubers are readily available and there are plenty of nearby parking garages.
 						</p>
 						<h6>201 State St, Madison, WI 53703</h6>
-								<h6>Attire:<b>Cocktail</b></h6>
+								<h6>Attire: <b>Cocktail</b></h6>
 				
 					</div>
 					</div>
