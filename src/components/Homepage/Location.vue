@@ -24,6 +24,18 @@
 						<h6>Attire: <b>Cocktail Casual</b></h6>
 					</div>
 					<img src="https://www.broadway.org/galleries/85/items/oveture-center.jpg" class="location__img location__img--sm ml-auto" alt="Location1" data-aos="zoom-in-right">
+					<div class="location__text location__text--sm u-bg-grey ml-auto u-m-b-3" data-aos="zoom-in-left">
+					<h6 class="text-uppercase">Sunday Brunch - 9:00AM - 12:00PM - July 14</h6>
+						<h3>Hilton Madison Monona Terrace</h3>
+						<p>
+							Please join us in celebrating our marriage with a casual Sunday brunch at Monona Terrace Hilton hotel. Brunch fare will be served.
+						</p>
+						<h6>9 E Wilson St, Madison, WI 53703</h6>
+								<h6>Attire: <b>Casual</b></h6>
+				
+					</div>
+					  
+
 					</div>
 
 				<!-- Location: right column -->
@@ -39,6 +51,7 @@
 								<h6>Attire: <b>Cocktail</b></h6>
 				
 					</div>
+					<img src="https://www3.hilton.com/resources/media/hi/MSNMHHF/en_US/img/shared/full_page_image_gallery/main/HH_chophousepatio01_30_675x359_FitToBoxSmallDimension_Center.jpg" alt="Location1" data-aos="zoom-in-right">
 					</div>
 			</div>
 		</div>
