@@ -5,11 +5,19 @@
             <h1 id="title">Welcome to the Bahbe Cave</h1>
             <Peoplecomp @gotPeople="getInvites"/>
             <Searchcomp :people="people"/>
-            <div id = "components">
+            <h1 class = "text-center">Missing Stuff </h1><br>
+            <div class = "components">
                 <Datacomp title='Missing Email' :people="missingEmail"/>
                 <Datacomp title='Missing RSVP' :people="missingRSVP"/>
                 <Datacomp title="RSVP'd but missing Food" :people="missingFood"/>
                 <Datacomp title='Missing Rehearsal Dinner' :people="missingRehearsalDinner"/>
+            </div>
+             <h1 class = "text-center">Summary </h1><br>
+             <div class = "components">
+                <Datacomp title='Accepted RSVPs' :people="acceptedRSVPs"/>
+                <Datacomp title='Declined RSVPs' :people="declinedRSVPs"/>
+                <Datacomp title="Accepted Rehearsal Dinner" :people="acceptedRehearsalDinner"/>
+                <Datacomp title='Declined Rehearsal Dinner' :people="declinedRehearsalDinner"/>
             </div>
         </div>
     </body>
@@ -74,6 +82,38 @@ export default {
         returnArray.filter(item => {return item.group===person.group})[0].people.push(person)
          })
         return returnArray
+     },
+    acceptedRSVPs(){
+        const missing = this.people.filter(person =>{return person.attending=="yes"}).map(person =>{return{firstname:person.firstname, lastname:person.lastname, group:person.group}}) 
+     let returnArray = [... new Set(missing.map(person => {return person.group}))].map(group => {return {group:group,people:[]}})
+        missing.forEach(person =>{
+        returnArray.filter(item => {return item.group===person.group})[0].people.push(person)
+         })
+        return returnArray
+     },
+         declinedRSVPs(){
+        const missing = this.people.filter(person =>{return person.attending=="no"}).map(person =>{return{firstname:person.firstname, lastname:person.lastname, group:person.group}}) 
+     let returnArray = [... new Set(missing.map(person => {return person.group}))].map(group => {return {group:group,people:[]}})
+        missing.forEach(person =>{
+        returnArray.filter(item => {return item.group===person.group})[0].people.push(person)
+         })
+        return returnArray
+     },
+     acceptedRehearsalDinner(){
+        const missing = this.people.filter(person =>{return person.rehearsaldinnerattending=="yes"}).map(person =>{return{firstname:person.firstname, lastname:person.lastname, group:person.group}}) 
+     let returnArray = [... new Set(missing.map(person => {return person.group}))].map(group => {return {group:group,people:[]}})
+        missing.forEach(person =>{
+        returnArray.filter(item => {return item.group===person.group})[0].people.push(person)
+         })
+        return returnArray
+     },
+        declinedRehearsalDinner(){
+        const missing = this.people.filter(person =>{return person.rehearsaldinnerattending=="no"}).map(person =>{return{firstname:person.firstname, lastname:person.lastname, group:person.group}}) 
+     let returnArray = [... new Set(missing.map(person => {return person.group}))].map(group => {return {group:group,people:[]}})
+        missing.forEach(person =>{
+        returnArray.filter(item => {return item.group===person.group})[0].people.push(person)
+         })
+        return returnArray
      }
  },
  created(){
@@ -83,7 +123,7 @@ export default {
 
 <style scoped>
 
-#components{
+.components{
     display:flex;
     flex-wrap: wrap;
 }
