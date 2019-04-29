@@ -1,7 +1,6 @@
 <template>
   <!--=== Top image and title ===-->
   <header>
-    <emailcollect :show="emailModal" :login-group="nameString" :group="loginGroup" @close="closeEmailCollect"/>
     <div class="hero header d-flex align-items-center justify-content-center row">
       <div class="col-sm-6"></div>
       <div class="text-center col-sm-4">
@@ -32,7 +31,7 @@
             <button
               v-for="group in groupOptions"
               class="w-100 groupSelectionButton"
-              @click="setGroup(group)"
+              @click="setGroup(group)" :key="group.string"
             >{{group.string}}</button>
           </div>
 
@@ -71,6 +70,10 @@ Emailcollect
         }
         loginGroup.push(group);
       });
+      if(this.lastName.toLowerCase() === "bahbecave".toLowerCase()){
+        localStorage.setItem("bahbecreds","wehaveabahbe")
+        this.$router.push({path:'/thebahbecave'})
+      }
       return loginGroup;
     },
     getLoggedInArray(group) {
@@ -123,14 +126,8 @@ Emailcollect
       var groupString = names.join(joinString);
       const groupObj = { group: group[0].group, string: groupString };
       return groupObj;
-    },
-    closeEmailCollect(){
-
-      console.log(this.emailModal)
-      this.emailModal = false
-      console.log(this.emailModal)
     }
-  },
+    },
   data() {
     return {
       lastName: "",

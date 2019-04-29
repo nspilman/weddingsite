@@ -1,9 +1,9 @@
 <template>
-    <div class = "col-sm-4">
-        <h4>
-            {{title}}
+    <div class ="col-sm-4" id="component">
+        <h4 id = "title" @click="show=!show">
+            {{title}}  <span v-if="counter"> {{counter}}</span>
         </h4>
-        <ul>
+        <ul v-if="show">
             <Group v-for="group in people" :key="group.group" :group="group"/>
             <!-- <li v-for="group in people" :key="group.group">
             {{group.group}} - {{group.people[0].lastname}} 
@@ -23,11 +23,38 @@ export default {
     props:['title','people'],
     components:{
         Group
+    },
+    data(){
+        return{
+            show:false,
+        }
+    },
+    computed:{
+        counter(){
+            let counter = 0;
+            this.people.forEach(group => counter = counter + group.people.length)
+            return counter
+        }
+    },
+    created(){
+        console.log(this.peopleCount)
     }
 }
 </script>
 
 <style scoped>
+#component{
+    color:var(--gold);
+    border-radius: 10px;
+}
+
+#title{
+    background-color: var(--blue);
+    border-radius: 10px;
+    padding:.4em;
+    display:flex;
+    justify-content: space-between;
+}
 
 </style>
 
