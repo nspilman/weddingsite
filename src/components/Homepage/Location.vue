@@ -23,6 +23,11 @@
 						<h6>931 E Main St #8, Madison, WI 53703</h6>
 						<h6>Attire: <b>Cocktail Casual</b></h6>
 					</div>
+					<div v-if="!people[0].rehearsaldinner" class="location__text location__text--sm u-bg-grey ml-auto u-m-b-3" data-aos="zoom-in-right">
+						<h6 class="text-uppercase">Madison Wisconsin Bars - 8PM - July 12</h6>
+						<h3>Madison Bars</h3>
+						<p>Welcome to Madison, Wisconsin! Let's enjoy some delicious local beer at a variety of our favorite Wisconsin bars. More specifics to come</p>
+					</div>
 					<img src="https://www.broadway.org/galleries/85/items/oveture-center.jpg" class="location__img location__img--sm ml-auto" alt="Location1" data-aos="zoom-in-right">
 					<div class="location__text location__text--sm u-bg-grey ml-auto u-m-b-3" data-aos="zoom-in-left">
 					<h6 class="text-uppercase">Sunday Brunch - 9:00AM - 12:00PM - July 14</h6>
@@ -41,6 +46,7 @@
 				<!-- Location: right column -->
 				<div class="col-md-6 textBox py-3">
 						<img v-if="people[0].rehearsaldinner === '1'" src="http://oldsugardistillery.com/images/rh_2.jpg" class="location__img location__img--sm" alt="Location" data-aos="zoom-in-left">
+						<img v-if="!people[0].rehearsaldinner" src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/1499658_714242448586072_2048152806_n.png?_nc_cat=1&_nc_ht=scontent-sea1-1.xx&oh=276e774d0e8088ba4c3d7552a13a31a0&oe=5D29F342" class="location__img location__img--sm" alt="Location" data-aos="zoom-in-left">
 					<div class="location__text location__text--sm u-bg-grey" data-aos="zoom-in-left">
 					<h6 class="text-uppercase">Wedding Ceremony and Reception - {{ceremonyTime}} - July 13</h6>
 						<h3>Overture Theater</h3>
