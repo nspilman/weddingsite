@@ -59,7 +59,7 @@
 								<h4>The Wedding</h4>
 								<p>We're so excited to invite you to where it all began - Madison, WI - to join us in celebrating our union! Madison is absolutely beautiful in the summer time, and we look forward to showing off the city in which it all began. </p>
 							</div>
-							<img src="https://scontent-msp1-1.xx.fbcdn.net/v/t1.0-9/19030668_10155491889424434_3737741845634291129_n.jpg?_nc_cat=103&_nc_ht=scontent-msp1-1.xx&oh=7ebb0fd655438c6be22172cc651b86ca&oe=5CD95378" alt="She said yes" data-aos="zoom-in-left" />
+							<img :src="story3" />
 							<!-- Uncomment this text block if you need 4th step in timeline. -->
 							<!-- <div class="story-timeline__text" data-aos="zoom-in-left">
 							<h4><heart-icon/>She said yes!</h4>
@@ -76,11 +76,13 @@
 <script>
 import story1 from "../../assets/img/bahbes/story1.jpg"
 import story2 from "../../assets/img/bahbes/story2.jpg"
+import story3 from "../../assets/img/bahbes/story3.jpg"
 export default {
 	data(){
 		return{
 			story1:story1,
-			story2:story2
+			story2:story2,
+			story3:story3,
 		}
 	}
 }
