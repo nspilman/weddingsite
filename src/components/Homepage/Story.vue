@@ -76,7 +76,7 @@
 <script>
 import story1 from "../../assets/img/bahbes/story1.jpg"
 import story2 from "../../assets/img/bahbes/story2.jpg"
-import story3 from "../../assets/img/bahbes/story3.jpg"
+import story3 from "../../assets/img/bahbes/muweti.jpg"
 export default {
 	data(){
 		return{
