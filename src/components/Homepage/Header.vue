@@ -1,7 +1,9 @@
 <template>
   <!--=== Top image and title ===-->
   <header>
-    <div class="hero header d-flex align-items-center justify-content-center row">
+    <div v-if="peopleList=='500'">
+      </div>
+    <div v-else class="hero header d-flex align-items-center justify-content-center row">
       <div class="col-sm-6"></div>
       <div class="text-center col-sm-4">
         <img
