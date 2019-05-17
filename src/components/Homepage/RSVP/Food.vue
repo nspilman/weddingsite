@@ -11,7 +11,7 @@
 				 </span>
 		<h6>Please select your entree</h6>
 		<div class="form-check py-1" v-for ="option in entreOptions" :key="option.name">
-  <input class="form-check-input" type="radio" :name="option.name.replace(/\s/g, '')" :id="option.name.replace(/\s/g, '')" :value="option.name" v-model="selection">
+  <input class="form-check-input" type="radio" :name="option.name.replace(/\s/g, '')+person.firstname" :id="option.name.replace(/\s/g, '')" :value="option.name" v-model="selection">
   <label class="form-check-label" :for="option.name.replace(/\s/g, '')">
    <h4 class = 'my-0'> <span v-if="option.vegitarian"> (v)</span>{{option.name}}</h4>
 	{{option.subName}}
