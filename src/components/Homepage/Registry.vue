@@ -45,7 +45,7 @@ export default {
 				},
 				{
 					name:'Target',
-					website:'https://tgt.gifts/ClaireandNate'
+					website:'https://www.target.com/gift-registry/giftgiver?registryId=c83b00e952d345aba53c0941d52132ae&type=WEDDING'
 				}
             ],
             charities:[
