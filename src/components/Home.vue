@@ -15,6 +15,7 @@
     <Intro/>
     <Story/>
     <location :ceremonyTime="ceremonyTime" :receptionTime="receptionTime" :people="loggedInArray"/>
+    <Gettingthere/>
     <Travel/>
     <Activities/>
     <Registry/>
@@ -59,6 +60,7 @@ import Location from "./Homepage/Location.vue";
 import RSVP from "./Homepage/RSVP/RSVP.vue";
 import People from "./Homepage/People.vue";
 import Registry from "./Homepage/Registry.vue";
+import Gettingthere from "./Homepage/Gettingthere.vue";
 import Travel from "./Homepage/Travel/Travel.vue";
 import Activities from "./Homepage/Activities/Activities.vue";
 
@@ -77,6 +79,7 @@ export default {
     Travel,
     Activities,
     Registry,
+    Gettingthere
   },
   data: function() {
     return {

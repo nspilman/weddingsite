@@ -31,7 +31,6 @@ export default {
     },
     computed:{
         counter(){
-            console.log(people)
             let attendees = 0;
             let plusOnes = 0;
             this.people.forEach(group => counter = counter + group.people.length)
@@ -41,6 +40,7 @@ export default {
         }
     },
     created(){
+        console.log(this.people)
     }
 }
 </script>

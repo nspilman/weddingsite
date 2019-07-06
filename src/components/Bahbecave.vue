@@ -44,7 +44,7 @@ export default {
  },
  methods:{
      getInvites(array){
-      this.people = array;
+      this.people = array.filter(person => person.lastname);
      },
     },
  computed:{
@@ -118,6 +118,7 @@ export default {
      }
  },
  created(){
+    console.log(this.declinedRehearsalDinner)
  } 
 }
 </script>
