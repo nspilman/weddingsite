@@ -34,7 +34,7 @@ export default {
     },
 created(){
     this.getInvites().catch(e => {this.$emit("gotPeople","500"); return})
-    // console.log(this.peopleArray)
+    console.log(this.peopleArray)
 }
 }
 </script>

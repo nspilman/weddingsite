@@ -31,13 +31,16 @@ export default {
     },
     computed:{
         counter(){
-            let counter = 0;
+            console.log(people)
+            let attendees = 0;
+            let plusOnes = 0;
             this.people.forEach(group => counter = counter + group.people.length)
+            this.people.forEach(group => counter = counter + group.people.length)
+            
             return counter
         }
     },
     created(){
-        console.log(this.peopleCount)
     }
 }
 </script>

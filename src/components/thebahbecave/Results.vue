@@ -17,24 +17,6 @@ export default {
         results(){
         }
     },
-    computed:{
-        attendingStatus(){
-            if(this.result.attending){
-                return "attending: " + this.result.attending;
-            }
-            else{
-                return "Not yet RSVP'd"
-            }
-        },
-        foodStatus(){
-            if(this.result.foodselection){
-                return "Food Selection: " + this.result.foodselection;
-            }
-            else{
-                return "Not yet selected food"
-            }
-        }
-    }
 }
 </script>
 

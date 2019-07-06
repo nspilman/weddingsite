@@ -15,6 +15,7 @@
              <h1 class = "text-center">Summary </h1><br>
              <div class = "components">
                 <Datacomp title='Accepted RSVPs' :people="acceptedRSVPs"/>
+                <Datacomp title='Attendance Count' :people="acceptedRSVPs"/>
                 <Datacomp title='Declined RSVPs' :people="declinedRSVPs"/>
                 <Datacomp title="Accepted Rehearsal Dinner" :people="acceptedRehearsalDinner"/>
                 <Datacomp title='Declined Rehearsal Dinner' :people="declinedRehearsalDinner"/>

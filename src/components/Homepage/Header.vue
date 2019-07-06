@@ -62,7 +62,10 @@ Emailcollect
     },
     getLoginGroup(people) {
       const lastNameMatches = this.peopleList.filter(person => {
+        console.log(person)
+        if(person.lastname){
         return person.lastname.toLowerCase() === this.lastName.toLowerCase();
+        }
       });
       const loginGroup = [];
       const loginGroupRaw = lastNameMatches.map(person => person.group);
